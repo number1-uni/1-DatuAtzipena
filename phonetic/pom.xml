@@ -48,6 +48,13 @@
       <artifactId>javax.json</artifactId>
       <version>1.1.4</version>
     </dependency>
+    <!-- https://jdbc.postgresql.org/download/ -->
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.5.0</version>
+  </dependency>
+
   </dependencies>
 
   <build>
