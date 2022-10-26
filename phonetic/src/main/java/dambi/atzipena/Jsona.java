@@ -12,7 +12,7 @@ import javax.json.JsonWriter;
 
 import dambi.pojoak.*;
 
-public class Jsona {
+public class Jsona { /*
   String strFileIn, strFileOut;
 
   public Jsona(String strFileIn, String strFileOut) {
@@ -26,7 +26,7 @@ public class Jsona {
   }
 
   public Produktuak irakurri() {
-    /* READ JSON FILE */
+   
     Produktuak produktuak = null;
     try {
       JsonReader reader = Json.createReader(new FileReader("src\\data\\" + strFileIn));
@@ -70,5 +70,5 @@ public class Jsona {
     }
     System.out.println(strFileOut + " fitxategia ondo idatzi da.");
     return mendiKopurua;
-  }
+  }*/
 }

@@ -1,26 +1,26 @@
-package dambi.pojoak;
+package dambi.pojoak.salmenta;
 import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement( name = "Produktuak" )
-public class Produktuak {
-    List<Produktua> produktuak;
+@XmlRootElement( name = "Salmentak" )
+public class Salmentak {
+    List<Salmenta> salmentak;
 
-    public List<Produktua> getProduktuak()
+    public List<Salmenta> getSalmentak()
     {
-        return produktuak;
+        return salmentak;
     }
 
     /**
      * element that is going to be marshaled in the xml
      */
-    @XmlElement( name = "Produktua" )
-    public void setProduktuak( List<Produktua> produktuak )
+    @XmlElement( name = "Salmenta" )
+    public void setSalmentak( List<Salmenta> salmentak )
     {
-        this.produktuak = produktuak;
+        this.salmentak = salmentak;
     }
 
     /**
@@ -28,15 +28,15 @@ public class Produktuak {
      * would be generated using xml schemas definitions, this method has to be added to the
      * generated class or to some helper or util one
      * 
-     * @param produktua
+     * @param salmenta
      */
-    public void add( Produktua produktua )
+    public void add( Salmenta salmenta )
     {
-        if( this.produktuak == null )
+        if( this.salmentak == null )
         {
-            this.produktuak = new ArrayList<Produktua>();
+            this.salmentak = new ArrayList<Salmenta>();
         }
-        this.produktuak.add( produktua );
+        this.salmentak.add( salmenta );
 
     }
 
@@ -44,9 +44,9 @@ public class Produktuak {
     public String toString()
     {
         StringBuffer str = new StringBuffer();
-        for( Produktua produktua : this.produktuak )
+        for( Salmenta salmenta : this.salmentak )
         {
-            str.append( produktua.toString() );
+            str.append( salmenta.toString());
         }
         return str.toString();
     }

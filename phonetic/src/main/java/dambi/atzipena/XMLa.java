@@ -2,7 +2,7 @@ package dambi.atzipena;
 
 import java.io.File;
 
-import dambi.pojoak.Produktuak;
+import dambi.pojoak.produktua.Produktuak;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.Marshaller;
 import jakarta.xml.bind.Unmarshaller;
