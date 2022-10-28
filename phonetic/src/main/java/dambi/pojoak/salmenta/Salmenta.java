@@ -1,10 +1,12 @@
 package dambi.pojoak.salmenta;
 
+
+
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
-@XmlType(propOrder = { "id","product_id", "name", "price_unit", "qty_invoiced", "price_subtotal" ,"price_total" })
+@XmlType(propOrder = { "id","product_id", "name", "price_unit", "qty_invoiced", "price_subtotal" ,"price_total", "write_date" })
 @XmlRootElement(name = "Salmenta")
 public class Salmenta {
 
@@ -15,12 +17,14 @@ public class Salmenta {
   private int qty_invoiced;
   private double price_subtotal;
   private double price_total;
+  private String write_date;
+
 
   public Salmenta() {
   }
   
   public Salmenta(int id, int product_id, String name, double price_unit, int qty_invoiced, double price_subtotal,
-      double price_total) {
+      double price_total, String write_date) {
     this.id = id;
     this.product_id = product_id;
     this.name = name;
@@ -28,6 +32,7 @@ public class Salmenta {
     this.qty_invoiced = qty_invoiced;
     this.price_subtotal = price_subtotal;
     this.price_total = price_total;
+    this.write_date = write_date;
   }
 
 
@@ -94,14 +99,20 @@ public class Salmenta {
     this.price_total = price_total;
   }
 
+  public String getWrite_date() {
+    return write_date;
+  }
+
+  @XmlElement(name = "write_date")
+  public void setWrite_date(String write_date) {
+    this.write_date = write_date;
+  }
 
   @Override
   public String toString() {
     return "Salmenta [id=" + id + ", product_id=" + product_id + ", name=" + name + ", price_unit=" + price_unit
-        + ", qty_invoiced=" + qty_invoiced + ", price_subtotal=" + price_subtotal + ", price_total=" + price_total
-        + "]\n";
+        + ", qty=" + qty_invoiced + ", price_subtotal=" + price_subtotal + ", price_total=" + price_total
+        + ", date=" + write_date + "]\n";
   }
-
-  
 
 }

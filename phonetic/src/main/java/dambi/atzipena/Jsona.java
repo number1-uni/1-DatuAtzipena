@@ -10,9 +10,10 @@ import javax.json.JsonReader;
 import javax.json.JsonStructure;
 import javax.json.JsonWriter;
 
-import dambi.pojoak.*;
+import dambi.pojoak.produktua.*;
+import dambi.pojoak.salmenta.*;
 
-public class Jsona { /*
+public class Jsona { 
   String strFileIn, strFileOut;
 
   public Jsona(String strFileIn, String strFileOut) {
@@ -25,29 +26,6 @@ public class Jsona { /*
     this.strFileOut = strFileIn + ".csv";
   }
 
-  public Produktuak irakurri() {
-   
-    Produktuak produktuak = null;
-    try {
-      JsonReader reader = Json.createReader(new FileReader("src\\data\\" + strFileIn));
-      JsonStructure jsonst = reader.read(); // json structure estruktura sortzen da
-
-      JsonArray jsonstArray = jsonst.asJsonArray(); // json structure arrayra bihurtzen da
-      produktuak = new Produktuak();
-      for (int i = 0; i < jsonstArray.size(); i++) {
-        Produktua produktua = new Produktua();
-        produktua.setId(jsonstArray.getJsonObject(i).getInt("id"));
-        produktua.setIzena(jsonstArray.getJsonObject(i).getString("produktua"));
-        produktua.setAltuera(jsonstArray.getJsonObject(i).getInt("altuera"));
-        produktua.setProbintzia(jsonstArray.getJsonObject(i).getString("probintzia"));
-        produktuak.add(produktua);
-      }
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
-    return produktuak;
-  }
-
   public int idatzi(Produktuak produktuak) {
     int mendiKopurua = 0;
     JsonArray model = null;
@@ -56,9 +34,8 @@ public class Jsona { /*
     for (Produktua produktua : produktuak.getProduktuak()) {
       jab.add(Json.createObjectBuilder()
           .add("id", produktua.getId())
-          .add("izena", produktua.getIzena())
-          .add("altuera", produktua.getAltuera())
-          .add("probintzia", produktua.getProbintzia())
+          .add("name", produktua.getName())
+          .add("list_price", produktua.getListPrice())
           .build());
       mendiKopurua++;
     }
@@ -70,5 +47,33 @@ public class Jsona { /*
     }
     System.out.println(strFileOut + " fitxategia ondo idatzi da.");
     return mendiKopurua;
-  }*/
+  }
+
+  public int idatzi2(Salmentak salmentak) {
+    int mendiKopurua = 0;
+    JsonArray model = null;
+    JsonArrayBuilder jab = Json.createArrayBuilder();
+
+    for (Salmenta salmenta : salmentak.getSalmentak()) {
+      jab.add(Json.createObjectBuilder()
+          .add("id", salmenta.getId())
+          .add("product_id", salmenta.getProduct_id())
+          .add("name", salmenta.getName())
+          .add("price_unit", salmenta.getPrice_unit())
+          .add("qty_invoiced", salmenta.getQty_invoiced())
+          .add("price_subtotal", salmenta.getPrice_subtotal())
+          .add("price_total", salmenta.getPrice_total())
+          .add("write_date", salmenta.getWrite_date())
+          .build());
+      mendiKopurua++;
+    }
+    model = jab.build();
+    try (JsonWriter jsonWriter = Json.createWriter(new FileOutputStream("src\\data\\" + strFileOut))) {
+      jsonWriter.writeArray(model);
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    System.out.println(strFileOut + " fitxategia ondo idatzi da.");
+    return mendiKopurua;
+  }
 }

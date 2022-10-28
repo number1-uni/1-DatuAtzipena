@@ -4,7 +4,7 @@ import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
-@XmlType(propOrder = { "id" , "name", "list_price" })
+@XmlType(propOrder = { "id" , "name", "listPrice" })
 @XmlRootElement(name = "Produktua")
 public class Produktua {
 

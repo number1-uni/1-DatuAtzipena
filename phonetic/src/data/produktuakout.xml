@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Salmentak>
+    <Salmenta>
+        <id>1</id>
+        <product_id>25</product_id>
+        <name>Apple Watch Series 3 42mm</name>
+        <price_unit>235.0</price_unit>
+        <qty_invoiced>1</qty_invoiced>
+        <price_subtotal>235.0</price_subtotal>
+        <price_total>284.35</price_total>
+        <write_date>2022-10-25 11:49:33.67354</write_date>
+    </Salmenta>
+    <Salmenta>
+        <id>2</id>
+        <product_id>26</product_id>
+        <name>Apple MX2G2ZM/A accesorio de smartwatch Cable de carga Blanco</name>
+        <price_unit>74.05</price_unit>
+        <qty_invoiced>1</qty_invoiced>
+        <price_subtotal>74.05</price_subtotal>
+        <price_total>89.6</price_total>
+        <write_date>2022-10-25 12:12:08.275725</write_date>
+    </Salmenta>
+    <Salmenta>
+        <id>3</id>
+        <product_id>27</product_id>
+        <name>Amazfit Bip 3 Pro</name>
+        <price_unit>69.99</price_unit>
+        <qty_invoiced>3</qty_invoiced>
+        <price_subtotal>209.97</price_subtotal>
+        <price_total>254.06</price_total>
+        <write_date>2022-10-26 06:29:35.595509</write_date>
+    </Salmenta>
+    <Salmenta>
+        <id>4</id>
+        <product_id>25</product_id>
+        <name>Apple Watch Series 3 42mm</name>
+        <price_unit>235.0</price_unit>
+        <qty_invoiced>2</qty_invoiced>
+        <price_subtotal>470.0</price_subtotal>
+        <price_total>568.7</price_total>
+        <write_date>2022-10-28 06:36:15.379082</write_date>
+    </Salmenta>
+</Salmentak>
