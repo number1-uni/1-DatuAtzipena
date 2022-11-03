@@ -1,14 +1,14 @@
 package dambi.atzipena;
 
 import java.io.FileOutputStream;
-import java.io.FileReader;
-
 import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonArrayBuilder;
 import javax.json.JsonReader;
 import javax.json.JsonStructure;
 import javax.json.JsonWriter;
+import java.io.FileReader;
+
 
 import dambi.pojoak.produktua.*;
 import dambi.pojoak.salmenta.*;
@@ -24,6 +24,34 @@ public class Jsona {
   public Jsona(String strFileIn) {
     this.strFileIn = strFileIn;
     this.strFileOut = strFileIn + ".csv";
+  }
+
+  public void irakurri(Salmentak salmentak) {
+    /* READ JSON FILE */
+    try {
+      JsonReader reader = Json.createReader(new FileReader("src\\data\\" + strFileIn));
+      JsonStructure jsonst = reader.read(); // json structure estruktura sortzen da
+
+      JsonArray jsonstArray = jsonst.asJsonArray(); // json structure arrayra bihurtzen da
+      for (int i = 0; i < jsonstArray.size(); i++) {
+        Salmenta salmenta = new Salmenta();
+
+        salmenta.setId(jsonstArray.getJsonObject(i).getInt("id"));
+        salmenta.setProduct_id(jsonstArray.getJsonObject(i).getInt("product_id"));
+        salmenta.setName(jsonstArray.getJsonObject(i).getString("name"));
+        salmenta.setPrice_unit(jsonstArray.getJsonObject(i).getInt("price_unit"));
+        salmenta.setQty_invoiced(jsonstArray.getJsonObject(i).getInt("qty_invoiced"));
+        salmenta.setPrice_subtotal(jsonstArray.getJsonObject(i).getInt("price_subtotal"));
+        salmenta.setPrice_total(jsonstArray.getJsonObject(i).getInt("price_total"));
+        salmenta.setWrite_date(jsonstArray.getJsonObject(i).getString("write_date"));
+        salmentak.add(salmenta);
+
+      }
+      System.out.println(salmentak);
+      System.out.println("Ondo irakurri da JSONa.");
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
   }
 
   public int idatzi(Produktuak produktuak) {

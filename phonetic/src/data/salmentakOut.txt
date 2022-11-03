@@ -1,0 +1,17 @@
+SALMENTA
+Salmenta [id=2, product_id=26, name=Apple MX2G2ZM/A accesorio de smartwatch Cable de carga Blanco, price_unit=74.05, qty=1, price_subtotal=74.05, price_total=89.6, date=2022-10-25 12:12:08.275725]
+
+Salmenta [id=8, product_id=36, name=Samsung Galaxy A13 64GB+4GB RAM, price_unit=159.0, qty=1, price_subtotal=159.0, price_total=192.39, date=2020-10-28 09:41:43.126115]
+
+Salmenta [id=5, product_id=38, name=Ebox Protector pantalla vidrio Samsung Galaxy A13, price_unit=9.99, qty=5, price_subtotal=49.95, price_total=60.44, date=2021-10-28 07:17:47.981528]
+
+Salmenta [id=6, product_id=44, name=Apple Funda Silicone Case iPhone 11 Pro Max, price_unit=44.99, qty=1, price_subtotal=44.99, price_total=54.44, date=2020-10-28 09:41:43.126115]
+
+Salmenta [id=3, product_id=27, name=Amazfit Bip 3 Pro, price_unit=69.99, qty=3, price_subtotal=209.97, price_total=254.06, date=2021-09-26 06:29:35.595509]
+
+Salmenta [id=1, product_id=25, name=Apple Watch Series 3 42mm, price_unit=235.0, qty=1, price_subtotal=235.0, price_total=284.35, date=2022-07-25 11:49:33.67354]
+
+Salmenta [id=4, product_id=25, name=Apple Watch Series 3 42mm, price_unit=235.0, qty=2, price_subtotal=470.0, price_total=568.7, date=2022-01-28 06:36:15.379082]
+
+Salmenta [id=7, product_id=4, name=Apple iPhone 12 256GB, price_unit=879.0, qty=1, price_subtotal=879.0, price_total=1063.59, date=2022-12-28 09:41:43.126115]
+

@@ -115,4 +115,8 @@ public class Salmenta {
         + ", date=" + write_date + "]\n";
   }
 
+  public String toStringCSV() {
+    return id + ";" + product_id + ";" + name + ";" + price_unit + ";" + qty_invoiced + ";" +  price_subtotal + ";" +  price_total + ";" +  write_date ;
+  }
+
 }

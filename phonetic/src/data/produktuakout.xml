@@ -1,43 +1,248 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Salmentak>
-    <Salmenta>
-        <id>1</id>
-        <product_id>25</product_id>
-        <name>Apple Watch Series 3 42mm</name>
-        <price_unit>235.0</price_unit>
-        <qty_invoiced>1</qty_invoiced>
-        <price_subtotal>235.0</price_subtotal>
-        <price_total>284.35</price_total>
-        <write_date>2022-10-25 11:49:33.67354</write_date>
-    </Salmenta>
-    <Salmenta>
-        <id>2</id>
-        <product_id>26</product_id>
-        <name>Apple MX2G2ZM/A accesorio de smartwatch Cable de carga Blanco</name>
-        <price_unit>74.05</price_unit>
-        <qty_invoiced>1</qty_invoiced>
-        <price_subtotal>74.05</price_subtotal>
-        <price_total>89.6</price_total>
-        <write_date>2022-10-25 12:12:08.275725</write_date>
-    </Salmenta>
-    <Salmenta>
-        <id>3</id>
-        <product_id>27</product_id>
-        <name>Amazfit Bip 3 Pro</name>
-        <price_unit>69.99</price_unit>
-        <qty_invoiced>3</qty_invoiced>
-        <price_subtotal>209.97</price_subtotal>
-        <price_total>254.06</price_total>
-        <write_date>2022-10-26 06:29:35.595509</write_date>
-    </Salmenta>
-    <Salmenta>
+<Produktuak>
+    <Produktua>
         <id>4</id>
-        <product_id>25</product_id>
-        <name>Apple Watch Series 3 42mm</name>
-        <price_unit>235.0</price_unit>
-        <qty_invoiced>2</qty_invoiced>
-        <price_subtotal>470.0</price_subtotal>
-        <price_total>568.7</price_total>
-        <write_date>2022-10-28 06:36:15.379082</write_date>
-    </Salmenta>
-</Salmentak>
+        <name>Samsung Galaxy S10</name>
+        <list_price>299.0</list_price>
+    </Produktua>
+    <Produktua>
+        <id>3</id>
+        <name>Samsung Galaxy S22 Ultra</name>
+        <list_price>1299.0</list_price>
+    </Produktua>
+    <Produktua>
+        <id>5</id>
+        <name>Samsung Cargador</name>
+        <list_price>11.69</list_price>
+    </Produktua>
+    <Produktua>
+        <id>12</id>
+        <name>Cargador de carga rápida</name>
+        <list_price>12.0</list_price>
+    </Produktua>
+    <Produktua>
+        <id>25</id>
+        <name>Correa Gear S2 Sport</name>
+        <list_price>18.92</list_price>
+    </Produktua>
+    <Produktua>
+        <id>19</id>
+        <name>Samsung Galaxy Watch5</name>
+        <list_price>329.9</list_price>
+    </Produktua>
+    <Produktua>
+        <id>14</id>
+        <name>Cristal Templado  iPhone 6S</name>
+        <list_price>17.99</list_price>
+    </Produktua>
+    <Produktua>
+        <id>31</id>
+        <name>ZTE Blade A52 Lite</name>
+        <list_price>99.0</list_price>
+    </Produktua>
+    <Produktua>
+        <id>18</id>
+        <name>Cargador para Coche</name>
+        <list_price>15.0</list_price>
+    </Produktua>
+    <Produktua>
+        <id>32</id>
+        <name>OPPO A54s 128GB+4GB RAM</name>
+        <list_price>169.0</list_price>
+    </Produktua>
+    <Produktua>
+        <id>9</id>
+        <name>Fundas AirPods 2</name>
+        <list_price>3.99</list_price>
+    </Produktua>
+    <Produktua>
+        <id>17</id>
+        <name>Funda AC/DC Iphone</name>
+        <list_price>12.95</list_price>
+    </Produktua>
+    <Produktua>
+        <id>7</id>
+        <name>Protector Pantalla iPhone 12</name>
+        <list_price>29.99</list_price>
+    </Produktua>
+    <Produktua>
+        <id>13</id>
+        <name>Cristal Templado Huawei Honor X7</name>
+        <list_price>12.99</list_price>
+    </Produktua>
+    <Produktua>
+        <id>15</id>
+        <name>Cristal Templado Samsung Galaxy M21</name>
+        <list_price>15.95</list_price>
+    </Produktua>
+    <Produktua>
+        <id>10</id>
+        <name>Funda iPhone 11 El Rey León</name>
+        <list_price>12.99</list_price>
+    </Produktua>
+    <Produktua>
+        <id>28</id>
+        <name>Smartwatch Cable de carga Blanco</name>
+        <list_price>74.05</list_price>
+    </Produktua>
+    <Produktua>
+        <id>33</id>
+        <name>Samsung Galaxy Z Flip4</name>
+        <list_price>865.99</list_price>
+    </Produktua>
+    <Produktua>
+        <id>21</id>
+        <name>Xiaomi Mi Band 3</name>
+        <list_price>27.18</list_price>
+    </Produktua>
+    <Produktua>
+        <id>22</id>
+        <name>Xiaomi Mi Watch</name>
+        <list_price>103.68</list_price>
+    </Produktua>
+    <Produktua>
+        <id>11</id>
+        <name>Protector Cámara iPhone 12</name>
+        <list_price>4.99</list_price>
+    </Produktua>
+    <Produktua>
+        <id>20</id>
+        <name>Xiaomi Correa Mi Band 3</name>
+        <list_price>3.99</list_price>
+    </Produktua>
+    <Produktua>
+        <id>26</id>
+        <name>Samsung Gear S2 Classic</name>
+        <list_price>108.56</list_price>
+    </Produktua>
+    <Produktua>
+        <id>6</id>
+        <name>Apple iPhone 12</name>
+        <list_price>879.0</list_price>
+    </Produktua>
+    <Produktua>
+        <id>27</id>
+        <name>Apple Watch Series 3</name>
+        <list_price>235.0</list_price>
+    </Produktua>
+    <Produktua>
+        <id>29</id>
+        <name>Amazfit Bip 3 Pro</name>
+        <list_price>69.99</list_price>
+    </Produktua>
+    <Produktua>
+        <id>30</id>
+        <name>Amazfit GTS 2 mini</name>
+        <list_price>79.99</list_price>
+    </Produktua>
+    <Produktua>
+        <id>24</id>
+        <name>Samsung Gear Fit 2 Pro</name>
+        <list_price>52.81</list_price>
+    </Produktua>
+    <Produktua>
+        <id>8</id>
+        <name>AirPods Pro (2.ª generación)</name>
+        <list_price>299.0</list_price>
+    </Produktua>
+    <Produktua>
+        <id>23</id>
+        <name>Samsung Galaxy Watch5 Pro</name>
+        <list_price>519.9</list_price>
+    </Produktua>
+    <Produktua>
+        <id>16</id>
+        <name>Cristal Templado Samsung Galaxy S8</name>
+        <list_price>15.95</list_price>
+    </Produktua>
+    <Produktua>
+        <id>34</id>
+        <name>Samsung Galaxy A52s</name>
+        <list_price>299.0</list_price>
+    </Produktua>
+    <Produktua>
+        <id>35</id>
+        <name>Xiaomi Mi 9T Pro</name>
+        <list_price>299.0</list_price>
+    </Produktua>
+    <Produktua>
+        <id>41</id>
+        <name>ZTE Blade A31</name>
+        <list_price>79.0</list_price>
+    </Produktua>
+    <Produktua>
+        <id>42</id>
+        <name>ZTE Blade A51</name>
+        <list_price>89.0</list_price>
+    </Produktua>
+    <Produktua>
+        <id>36</id>
+        <name>Xiaomi 11T</name>
+        <list_price>599.0</list_price>
+    </Produktua>
+    <Produktua>
+        <id>37</id>
+        <name>Xiaomi Redmi 10C</name>
+        <list_price>169.0</list_price>
+    </Produktua>
+    <Produktua>
+        <id>40</id>
+        <name>Protector pantalla Samsung Galaxy A13</name>
+        <list_price>9.99</list_price>
+    </Produktua>
+    <Produktua>
+        <id>38</id>
+        <name>Samsung Galaxy A13</name>
+        <list_price>159.0</list_price>
+    </Produktua>
+    <Produktua>
+        <id>43</id>
+        <name>ZTE LiveBuds</name>
+        <list_price>16.99</list_price>
+    </Produktua>
+    <Produktua>
+        <id>45</id>
+        <name>Samsung Charger</name>
+        <list_price>34.99</list_price>
+    </Produktua>
+    <Produktua>
+        <id>48</id>
+        <name>Huawei Mate 20 Lite</name>
+        <list_price>325.99</list_price>
+    </Produktua>
+    <Produktua>
+        <id>46</id>
+        <name>Funda iPhone 11 Pro Max</name>
+        <list_price>44.99</list_price>
+    </Produktua>
+    <Produktua>
+        <id>44</id>
+        <name>Protector pantalla ZTE Blade A51</name>
+        <list_price>9.99</list_price>
+    </Produktua>
+    <Produktua>
+        <id>49</id>
+        <name>Funda  Huawei Mate 20 X Valladolid</name>
+        <list_price>14.99</list_price>
+    </Produktua>
+    <Produktua>
+        <id>50</id>
+        <name>Funda Eibar Xiaomi Redmi 7A</name>
+        <list_price>14.99</list_price>
+    </Produktua>
+    <Produktua>
+        <id>47</id>
+        <name>Huawei P30 Lite</name>
+        <list_price>189.0</list_price>
+    </Produktua>
+    <Produktua>
+        <id>51</id>
+        <name>Funda Atleti Xiaomi Redmi S2</name>
+        <list_price>1.0</list_price>
+    </Produktua>
+    <Produktua>
+        <id>39</id>
+        <name>Samsung Galaxy Buds</name>
+        <list_price>59.99</list_price>
+    </Produktua>
+</Produktuak>
