@@ -17,8 +17,8 @@ public class TestDB {
 
     private static String db = "PhoneTic";
     private static String url = "jdbc:postgresql://192.168.65.13:5432/" + db;
-    private static String user = "raul"; // !IMPORTANT! username
-    private static String password = "raul"; // !IMPORTANT! password
+    private static String user = "DA"; // !IMPORTANT! username
+    private static String password = "admin"; // !IMPORTANT! password
 
     private static Produktuak produktuak = new Produktuak();
     private static Salmentak salmentak = new Salmentak();
