@@ -22,7 +22,7 @@ public class XMLa {
     this.strFileOut = strFileIn + ".csv";
   }
 
-  public void irakurri(Salmentak salmentak) {
+  public void irakurriSales(Salmentak salmentak) {
     try {
       File file = new File("src//data//" + strFileIn);
       JAXBContext jaxbContext = JAXBContext.newInstance(Salmentak.class);
@@ -37,7 +37,7 @@ public class XMLa {
     System.out.println("Ondo irakurri da XMLa.");
   }
 
-  public int idatzi(Produktuak produktuak) {
+  public int idatziProducts(Produktuak produktuak) {
     int kopurua = 0;
     try {
       JAXBContext jaxbContext = JAXBContext.newInstance(Produktuak.class);
@@ -52,7 +52,7 @@ public class XMLa {
     return kopurua;
   }
 
-  public int idatzi2(Salmentak salmentak) {
+  public int idatziSales(Salmentak salmentak) {
     int kopurua = 0;
     try {
       JAXBContext jaxbContext = JAXBContext.newInstance(Salmentak.class);

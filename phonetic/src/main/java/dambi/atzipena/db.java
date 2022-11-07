@@ -15,8 +15,8 @@ public class db {
     private static String url = "jdbc:postgresql://192.168.65.13:5432/" + db;
     private static String user = "DA"; // !IMPORTANT! username
     private static String password = "admin"; // !IMPORTANT! password
-    private static Salmentak salmentak = new Salmentak();
-    private static Produktuak produktuak = new Produktuak();
+    public static Salmentak salmentak = new Salmentak();
+    public static Produktuak produktuak = new Produktuak();
     
     public static Connection connect() {
         Connection conn = null;

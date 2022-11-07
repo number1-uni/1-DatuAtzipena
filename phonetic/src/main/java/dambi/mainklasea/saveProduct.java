@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 import dambi.atzipena.*;
 
-public class productOdoo {
+public class saveProduct {
 
     public static void main(String[] args) {
         String izena, deskripzioa;

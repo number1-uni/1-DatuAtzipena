@@ -5,7 +5,7 @@ import java.util.Scanner;
 import dambi.atzipena.*;
 import dambi.pojoak.salmenta.*;
 
-public class SalmentakGorde {
+public class saveSales {
 
     private static Salmentak salmentak = new Salmentak();
     private static Csva csva = new Csva("salmentakOut.csv", "salmentakOut.csv");
@@ -37,24 +37,24 @@ public class SalmentakGorde {
             switch (aukera) {
                 case 1:
                     salmentak = db.salmentakGorde();
-                    csva.idatzi2(salmentak);
+                    csva.idatziSales(salmentak);
                     break;
                 case 2:
                     salmentak = db.salmentakGorde();
-                    xmla.idatzi2(salmentak);
+                    xmla.idatziSales(salmentak);
                     break;
                 case 3:
                     salmentak = db.salmentakGorde();
-                    jsona.idatzi2(salmentak);
+                    jsona.idatziSales(salmentak);
                     break;
                 case 4:
-                    csva.irakurri(salmentak);
+                    csva.irakurriSales(salmentak);
                     break;
                 case 5:
-                    xmla.irakurri(salmentak);
+                    xmla.irakurriSales(salmentak);
                     break;
                 case 6:
-                    jsona.irakurri(salmentak);
+                    jsona.irakurriSales(salmentak);
                     break;
                 case 10:
                     System.out.println("Eskerrik asko programa hau erabiltzeagatik.");
