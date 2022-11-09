@@ -26,7 +26,7 @@ public class Jsona {
     this.strFileOut = strFileIn + ".csv";
   }
 
-  public void irakurri(Salmentak salmentak) {
+  public void irakurriSales(Salmentak salmentak) {
     /* READ JSON FILE */
     try {
       JsonReader reader = Json.createReader(new FileReader("src\\data\\" + strFileIn));
@@ -54,7 +54,7 @@ public class Jsona {
     }
   }
 
-  public int idatzi(Produktuak produktuak) {
+  public int idatziProducts(Produktuak produktuak) {
     int mendiKopurua = 0;
     JsonArray model = null;
     JsonArrayBuilder jab = Json.createArrayBuilder();
@@ -77,7 +77,7 @@ public class Jsona {
     return mendiKopurua;
   }
 
-  public int idatzi2(Salmentak salmentak) {
+  public int idatziSales(Salmentak salmentak) {
     int mendiKopurua = 0;
     JsonArray model = null;
     JsonArrayBuilder jab = Json.createArrayBuilder();

@@ -23,9 +23,8 @@ public class Csva {
     this.strFileOut = strFileIn + "out.csv";
   }
 
-  public void irakurri(Salmentak salmentak) {
+  public void irakurriSales(Salmentak salmentak) {
 
-    //Salmentak salmentak = new Salmentak();
     BufferedReader br = null;
     try {
       br = new BufferedReader(new FileReader("src//data//" + strFileIn));
@@ -66,7 +65,7 @@ public class Csva {
     }
   }
 
-  public int idatzi(Produktuak produktuak) {
+  public int idatziProducts(Produktuak produktuak) {
     int kopurua = 0;
 
     try (PrintWriter outputStream = new PrintWriter(new FileWriter("src//data//" + strFileOut))) {
@@ -84,7 +83,7 @@ public class Csva {
     return kopurua;
   }
 
-  public int idatzi2(Salmentak salmentak) {
+  public int idatziSales(Salmentak salmentak) {
     int kopurua = 0;
 
     try (PrintWriter outputStream = new PrintWriter(new FileWriter("src//data//" + strFileOut))) {

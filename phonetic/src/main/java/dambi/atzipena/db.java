@@ -9,14 +9,18 @@ import java.sql.Statement;
 import dambi.pojoak.produktua.*;
 import dambi.pojoak.salmenta.*;
 
+/**
+ * Klase honen bidez datu basearekin konektatuko da.
+ * Horretaz gain, datu baseko produktuak eta salmenta
+ * datuak Lista batean gordeko dira.
+ */
 public class db {
 
-    private static String db = "PhoneTic";
-    private static String url = "jdbc:postgresql://192.168.65.13:5432/" + db;
+    private static String url = "jdbc:postgresql://192.168.65.13:5432/PhoneTic";
     private static String user = "DA"; // !IMPORTANT! username
     private static String password = "admin"; // !IMPORTANT! password
-    private static Salmentak salmentak = new Salmentak();
-    private static Produktuak produktuak = new Produktuak();
+    public static Salmentak salmentak = new Salmentak();
+    public static Produktuak produktuak = new Produktuak();
     
     public static Connection connect() {
         Connection conn = null;
@@ -28,10 +32,13 @@ public class db {
         return conn;
     }
 
-    
+    /**
+     * Datu baseko produktuak Lista batean gordeko dira.
+     * Zutabeak: id, name, list_price.
+     * @return Produktuak List
+     */
     public static Produktuak produktuakGorde() {
-        String taula = "product_template";
-        String sql = "SELECT * FROM " + taula;
+        String sql = "SELECT * FROM product_template";
 
         try (Connection conn = connect();
                 Statement stmt = conn.createStatement();
@@ -45,9 +52,14 @@ public class db {
         return produktuak;
     }
 
+    /**
+     * Datu baseko salmentak Lista batean gordeko dira.
+     * Zutabeak: id, product_id, name, price_unit, qty_invoiced, 
+     *           price_subtotal, price_total, write_date.
+     * @return Salmentak List
+     */
     public static Salmentak salmentakGorde() {
-        String taula = "sale_order_line";
-        String sql = "SELECT * FROM " + taula;
+        String sql = "SELECT * FROM sale_order_line";
 
         try (Connection conn = connect();
                 Statement stmt = conn.createStatement();
