@@ -14,14 +14,14 @@ import dambi.pojoak.salmenta.*;
  * Horretaz gain, datu baseko produktuak eta salmenta
  * datuak Lista batean gordeko dira.
  */
-public class db {
+public class Db {
 
     private static String url = "jdbc:postgresql://192.168.65.13:5432/PhoneTic";
     private static String user = "DA"; // !IMPORTANT! username
     private static String password = "admin"; // !IMPORTANT! password
     public static Salmentak salmentak = new Salmentak();
     public static Produktuak produktuak = new Produktuak();
-    
+
     public static Connection connect() {
         Connection conn = null;
         try {
@@ -35,6 +35,7 @@ public class db {
     /**
      * Datu baseko produktuak Lista batean gordeko dira.
      * Zutabeak: id, name, list_price.
+     * 
      * @return Produktuak List
      */
     public static Produktuak produktuakGorde() {
@@ -54,8 +55,9 @@ public class db {
 
     /**
      * Datu baseko salmentak Lista batean gordeko dira.
-     * Zutabeak: id, product_id, name, price_unit, qty_invoiced, 
-     *           price_subtotal, price_total, write_date.
+     * Zutabeak: id, product_id, name, price_unit, qty_invoiced,
+     * price_subtotal, price_total, write_date.
+     * 
      * @return Salmentak List
      */
     public static Salmentak salmentakGorde() {
@@ -66,8 +68,9 @@ public class db {
                 ResultSet rs = stmt.executeQuery(sql)) {
             while (rs.next()) {
 
-                salmentak.add(new Salmenta(rs.getInt("id"), rs.getInt("product_id"), rs.getString("name"), rs.getDouble("price_unit"), rs.getInt("qty_invoiced"),
-                rs.getDouble("price_subtotal"), rs.getDouble("price_total"), rs.getString("write_date") ));
+                salmentak.add(new Salmenta(rs.getInt("id"), rs.getInt("product_id"), rs.getString("name"),
+                        rs.getDouble("price_unit"), rs.getInt("qty_invoiced"),
+                        rs.getDouble("price_subtotal"), rs.getDouble("price_total"), rs.getString("write_date")));
             }
         } catch (SQLException e) {
             System.out.println(e.getMessage());

@@ -1,37 +1,48 @@
-package dambi.mainklasea;
+package dambi.atzipena;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.Statement;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
-import dambi.atzipena.db;
-
-public class saleOrder {
+public class Postgres {
     private static Scanner in = new Scanner(System.in);
-    public static void main(String[] args) {
-        String izena = selectProductName();
-        boolean check = false;
-        float prezioa;
-        int kantitatea;
-        int id = findId() + 1;
-        int order_id = findOrderId();
-        while (!check){ 
-            try{        
-                System.out.print("Prezioa: ");
-                prezioa = in.nextFloat();
-                System.out.print("Kantitatea: ");
-                kantitatea = in.nextInt();
-                insertProduct(id, order_id, izena, prezioa, kantitatea);
-                check = true;
-            } catch (Exception e) {
-                System.out.println("Sartu duzun balioak ez dira zuzenak. Saiatu berriz.");
-                in.nextLine();
-            }
+    
+    public static void insertProduct(int id, String izena, String deskripzioa, float prezioa) {
+
+        String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new java.util.Date());
+        ;
+
+        String sql = "INSERT INTO public.product_template VALUES( " + id + ", NULL,'" + izena + "',1,'" + deskripzioa
+                + "',NULL,NULL,'product','product',1," + prezioa
+                + ",10,10,true,true,1,1,NULL,true,NULL,NULL,false,false,0,2,'" + timeStamp + "',2,'" + timeStamp
+                + "',0,'none',NULL,NULL,NULL,'receive','no-message',NULL,'false',0,'none','no','order',false);";
+
+        try {
+            Connection conn = Db.connect();
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.executeUpdate();
+        } catch (Exception ex) {
+            System.out.println("Exception : " + ex);
         }
-        in.close();
+    }
+
+    public static int findIdProduct() {
+        String sql = "SELECT id FROM public.product_template ORDER BY id DESC LIMIT 1";
+        int id = 0;
+        try {
+            Connection conn = Db.connect();
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()) {
+                id = rs.getInt(1);
+            }
+        } catch (Exception ex) {
+            System.out.println("Exception : " + ex);
+        }
+        return id;
     }
     
     public static void insertProduct(int id,int order_id, String izena,  float prezioa, int kantitatea) {
@@ -48,7 +59,7 @@ public class saleOrder {
                     + timeStamp + "', 2, '"+ timeStamp + "', null);";
 
         try {
-            Connection conn = db.connect();
+            Connection conn = Db.connect();
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.executeUpdate();
             System.out.println("Produktua ondo sortu da.");
@@ -57,11 +68,11 @@ public class saleOrder {
         }
     }
 
-    public static int findId() {
+    public static int findIdSale() {
         String sql = "SELECT id FROM public.sale_order_line ORDER BY id DESC LIMIT 1";
         int id = 0;
         try {
-            Connection conn = db.connect();
+            Connection conn = Db.connect();
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
@@ -77,7 +88,7 @@ public class saleOrder {
         String sql = "SELECT order_id FROM public.sale_order_line ORDER BY id DESC LIMIT 1";
         int id = 0;
         try {
-            Connection conn = db.connect();
+            Connection conn = Db.connect();
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
@@ -91,16 +102,15 @@ public class saleOrder {
 
     public static String selectProductName(){
         int produktuaIndex;
-        db.produktuakGorde();
+        Db.produktuakGorde();
         System.out.println("PRODUKTUA SORTZEKO MENUA");
-        for (int i = 0; i < db.produktuak.getProduktuak().size(); i++) {
-            System.out.println((i+1) + ". " + db.produktuak.getProduktuak().get(i).getName());
+        for (int i = 0; i < Db.produktuak.getProduktuak().size(); i++) {
+            System.out.println((i+1) + ". " + Db.produktuak.getProduktuak().get(i).getName());
         }
         System.out.println("------------------------------------");
         System.out.print("Sartu produktuaren zenbakia:");
         produktuaIndex = in.nextInt();
-        String izena = db.produktuak.getProduktuak().get(produktuaIndex-1).getName();
+        String izena = Db.produktuak.getProduktuak().get(produktuaIndex-1).getName();
         return izena;
     }
-
 }
