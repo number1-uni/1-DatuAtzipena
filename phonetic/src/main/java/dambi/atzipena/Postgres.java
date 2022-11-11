@@ -1,6 +1,7 @@
 package dambi.atzipena;
 
 import java.sql.Statement;
+import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
 import java.sql.Connection;
@@ -76,21 +77,27 @@ public class Postgres {
         }
         return salmentak;
     }
-    
+
     public static void insertProduct(int id, String izena, String deskripzioa, float prezioa) {
 
-        String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new java.util.Date());
-        ;
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
-        String sql = "INSERT INTO public.product_template VALUES( " + id + ", NULL,'" + izena + "',1,'" + deskripzioa
-                + "',NULL,NULL,'product','product',1," + prezioa
-                + ",10,10,true,true,1,1,NULL,true,NULL,NULL,false,false,0,2,'" + timeStamp + "',2,'" + timeStamp
-                + "',0,'none',NULL,NULL,NULL,'receive','no-message',NULL,'false',0,'none','no','order',false);";
+        String sql = "INSERT INTO public.product_template VALUES( ?, NULL, ?,1, ?,NULL,NULL,'product','product',1, ?," +
+                "10,10,true,true,1,1,NULL,true,NULL,NULL,false,false,0,2, ?,2, ?,0,'none',NULL,NULL,NULL,'receive','no-message',"
+                +
+                "NULL,'false',0,'none','no','order',false);";
 
         try {
             Connection conn = connect();
             PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setInt(1, id);
+            stmt.setString(2, izena);
+            stmt.setString(3, deskripzioa);
+            stmt.setFloat(4, prezioa);
+            stmt.setTimestamp(5, timestamp);
+            stmt.setTimestamp(6, timestamp);
             stmt.executeUpdate();
+            stmt.close();
         } catch (Exception ex) {
             System.out.println("Exception : " + ex);
         }
@@ -111,23 +118,38 @@ public class Postgres {
         }
         return id;
     }
-    
-    public static void insertProduct(int id,int order_id, String izena,  float prezioa, int kantitatea) {
-        String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new java.util.Date());
+
+    public static void insertSaleOrder(int id, int order_id, String izena, float prezioa, int kantitatea) {
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         float quantity = kantitatea;
         float price_subtotal = quantity * prezioa;
-        float BEZ = 0.21f * price_subtotal;
-        float price_total = quantity * prezioa + BEZ;
+        float bez = 0.21f * price_subtotal;
+        float price_total = quantity * prezioa + bez;
         float priceTaxUnit = 0.21f * prezioa;
-        
-        String sql = "INSERT INTO public.sale_order_line VALUES ("+ id + ", 7, '" + izena + "', 10,'invoiced', "+ prezioa + ", "+ price_subtotal + ", "
-                    + BEZ +", " + price_total + ", " + prezioa +", "+ priceTaxUnit +", " + prezioa + ", 0.00, 10, "+ quantity + " , "+ kantitatea 
-                    + ", 'stock_move', 0.00, 0.00, 0.00, " + quantity + ", null, null, 2, 1, 1, 25, null, null, 'sale', 0, null, null, 0, 2, '"
-                    + timeStamp + "', 2, '"+ timeStamp + "', null);";
+
+        String sql = "INSERT INTO public.sale_order_line VALUES (?, 7, ?, 10,'invoiced', ?, ?, ?, ?, ?, ?, ?, 0.00, 10, ?, ?,"
+                +
+                "'stock_move', 0.00, 0.00, 0.00, ?, null, null, 2, 1, 1, 25, null, null, 'sale', 0, null, null, 0, 2, ?,"
+                +
+                " 2, ?, null);";
 
         try {
             Connection conn = connect();
             PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setInt(1, id);
+            stmt.setString(2, izena);
+            stmt.setFloat(3, prezioa);
+            stmt.setFloat(4, price_subtotal);
+            stmt.setFloat(5, bez);
+            stmt.setFloat(6, price_total);
+            stmt.setFloat(7, prezioa);
+            stmt.setFloat(8, priceTaxUnit);
+            stmt.setFloat(9, prezioa);
+            stmt.setFloat(10, quantity);
+            stmt.setInt(11, kantitatea);
+            stmt.setFloat(12, quantity);
+            stmt.setTimestamp(13, timestamp);
+            stmt.setTimestamp(14, timestamp);
             stmt.executeUpdate();
             System.out.println("Produktua ondo sortu da.");
         } catch (Exception ex) {
@@ -167,17 +189,17 @@ public class Postgres {
         return id;
     }
 
-    public static String selectProductName(){
+    public static String selectProductName() {
         int produktuaIndex;
         produktuakGorde();
         System.out.println("PRODUKTUA SORTZEKO MENUA");
         for (int i = 0; i < produktuak.getProduktuak().size(); i++) {
-            System.out.println((i+1) + ". " + produktuak.getProduktuak().get(i).getName());
+            System.out.println((i + 1) + ". " + produktuak.getProduktuak().get(i).getName());
         }
         System.out.println("------------------------------------");
         System.out.print("Sartu produktuaren zenbakia:");
         produktuaIndex = in.nextInt();
-        String izena = produktuak.getProduktuak().get(produktuaIndex-1).getName();
+        String izena = produktuak.getProduktuak().get(produktuaIndex - 1).getName();
         return izena;
     }
 }

@@ -33,6 +33,7 @@ public class MainClass {
 
             switch (aukera) {
                 case 1:
+                    //Postgres.insertErab(4, "Peru", "Malatsetxeberria");
                     saveProduct();
                     break;
                 case 2:
@@ -191,7 +192,7 @@ public class MainClass {
                 prezioa = in.nextFloat();
                 System.out.print("Kantitatea: ");
                 kantitatea = in.nextInt();
-                Postgres.insertProduct(id, order_id, izena, prezioa, kantitatea);
+                Postgres.insertSaleOrder(id, order_id, izena, prezioa, kantitatea);
                 check = true;
             } catch (Exception e) {
                 System.out.println("Sartu duzun balioak ez dira zuzenak. Saiatu berriz.");
