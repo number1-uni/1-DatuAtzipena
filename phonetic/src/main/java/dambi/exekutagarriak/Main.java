@@ -7,16 +7,16 @@ import dambi.atzipena.*;
 import dambi.pojoak.produktua.*;
 import dambi.pojoak.salmenta.*;
 
-public class MainClass {
+public class Main {
     private static Produktuak produktuak = new Produktuak();
     private static Salmentak salmentak = new Salmentak();
     private static Csva csva = new Csva("produktuak.csv", "produktuakout.txt");
     static XMLa xmla = new XMLa("produktuakout.csv", "produktuakout.xml");
     private static Jsona jsona = new Jsona("produktuak.csv", "produktuakout.json");
     private static Scanner in = new Scanner(System.in);
-    
+
     public static void main(String[] args) {
-        
+
         int aukera = 0;
         do {
             System.out.println();
@@ -34,17 +34,16 @@ public class MainClass {
 
             switch (aukera) {
                 case 1:
-                    //Postgres.insertErab(4, "Peru", "Malatsetxeberria");
                     saveProduct();
                     break;
                 case 2:
-                    exportProducts(); //hecho
+                    exportProducts(); 
                     break;
                 case 3:
                     saleOrder();
                     break;
                 case 4:
-                    saveSales(); //hecho
+                    saveSales();
                     break;
                 case 10:
                     System.out.println("Eskerrik asko programa hau erabiltzeagatik.");
@@ -56,14 +55,13 @@ public class MainClass {
         in.close();
     }
 
-    public static void exportProducts(){
+    public static void exportProducts() {
         Postgres.connect();
         produktuak = Postgres.produktuakGorde();
 
-        Scanner in = new Scanner(System.in);
         int aukera = 0;
         boolean salir = false;
-        while(!salir){
+        while (!salir) {
 
             System.out.println();
             System.out.println("PRODUKTU MENUA");
@@ -74,44 +72,40 @@ public class MainClass {
             System.out.println("10.- Irten");
             System.out.println("");
             System.out.print("Aukeratu zenbaki bat: ");
-try{
-            aukera = in.nextInt();
+            try {
+                aukera = in.nextInt();
 
-            switch (aukera) {
-                case 1:
-                    csva.idatziProducts(produktuak);
-                    break;
-                case 2:
-                    xmla.idatziProducts(produktuak);
-                    break;
-                case 3:
-                    jsona.idatziProducts(produktuak);
-                    break;
-                case 10:
-                    salir=true;
-                    System.out.println("Irtetzen ...");
-                    //mainClass.main(args);
-                    break;
-                default:
-                    System.out.println("Aukera okerra. Saiatu berriz.");
+                switch (aukera) {
+                    case 1:
+                        csva.idatziProducts(produktuak);
+                        break;
+                    case 2:
+                        xmla.idatziProducts(produktuak);
+                        break;
+                    case 3:
+                        jsona.idatziProducts(produktuak);
+                        break;
+                    case 10:
+                        salir = true;
+                        System.out.println("Irtetzen ...");
+                        // mainClass.main(args);
+                        break;
+                    default:
+                        System.out.println("Aukera okerra. Saiatu berriz.");
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Zenbaki bat aukeratu behar duzu");
+                in.nextInt();
             }
         }
-        catch(InputMismatchException e){
-            System.out.println("Zenbaki bat aukeratu behar duzu");
-            in.nextInt();
-        }
-            
-           // aukera = in.nextInt();
-        } 
     }
 
-    public static void saveSales(){
+    public static void saveSales() {
         Postgres.connect();
 
-        Scanner in = new Scanner(System.in);
         int aukera = 0;
         boolean salir = false;
-        while(!salir){
+        while (!salir) {
             System.out.println();
             System.out.println("SALMENTA MENUA");
             System.out.println("====================================");
@@ -124,56 +118,54 @@ try{
             System.out.println("10.- Irten");
             System.out.println("");
             System.out.print("Aukeratu zenbaki bat: ");
-try{
-            aukera = in.nextInt();
+            try {
+                aukera = in.nextInt();
 
-            switch (aukera) {
-                case 1:
-                    salmentak = Postgres.salmentakGorde();
-                    csva.idatziSales(salmentak);
-                    break;
-                case 2:
-                    salmentak = Postgres.salmentakGorde();
-                    xmla.idatziSales(salmentak);
-                    break;
-                case 3:
-                    salmentak = Postgres.salmentakGorde();
-                    jsona.idatziSales(salmentak);
-                    break;
-                case 4:
-                    csva.irakurriSales(salmentak);
-                    break;
-                case 5:
-                    xmla.irakurriSales(salmentak);
-                    break;
-                case 6:
-                    jsona.irakurriSales(salmentak);
-                    break;
-                case 10:
-                    salir = true;
-                    System.out.println("Eskerrik asko programa hau erabiltzeagatik.");
-                    break;
-                default:
-                    System.out.println("Aukera okerra. Saiatu berriz.");
-            
-            }
-        }
-            catch(InputMismatchException e){
+                switch (aukera) {
+                    case 1:
+                        salmentak = Postgres.salmentakGorde();
+                        csva.idatziSales(salmentak);
+                        break;
+                    case 2:
+                        salmentak = Postgres.salmentakGorde();
+                        xmla.idatziSales(salmentak);
+                        break;
+                    case 3:
+                        salmentak = Postgres.salmentakGorde();
+                        jsona.idatziSales(salmentak);
+                        break;
+                    case 4:
+                        csva.irakurriSales(salmentak);
+                        break;
+                    case 5:
+                        xmla.irakurriSales(salmentak);
+                        break;
+                    case 6:
+                        jsona.irakurriSales(salmentak);
+                        break;
+                    case 10:
+                        salir = true;
+                        System.out.println("Eskerrik asko programa hau erabiltzeagatik.");
+                        break;
+                    default:
+                        System.out.println("Aukera okerra. Saiatu berriz.");
+
+                }
+            } catch (InputMismatchException e) {
                 System.out.println("Zenbaki bat aukeratu behar duzu");
                 in.nextInt();
             }
-            //aukera = in.nextInt();
-        }; 
+        }
+        ;
     }
-    
+
     public static void saveProduct() {
         String izena, deskripzioa;
         float prezioa;
         boolean check = false;
-        Scanner in = new Scanner(System.in);
         int id = Postgres.findIdProduct() + 1;
-        while (!check){ 
-            try{        
+        while (!check) {
+            try {
                 System.out.println("PRODUKTUA SORTZEKO MENUA");
                 System.out.print("Izena: ");
                 izena = in.nextLine();
@@ -198,8 +190,8 @@ try{
         int kantitatea;
         int id = Postgres.findIdSale() + 1;
         int order_id = Postgres.findOrderId();
-        while (!check){ 
-            try{        
+        while (!check) {
+            try {
                 System.out.print("Prezioa: ");
                 prezioa = in.nextFloat();
                 System.out.print("Kantitatea: ");

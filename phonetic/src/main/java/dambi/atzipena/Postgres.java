@@ -2,7 +2,6 @@ package dambi.atzipena;
 
 import java.sql.Statement;
 import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
 import java.util.Scanner;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -118,15 +117,9 @@ public class Postgres {
         }
         return id;
     }
-<<<<<<< HEAD
-    
-    public static void insertSaleOrder(int id,int order_id, String izena,  float prezioa, int kantitatea) {
-        String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new java.util.Date());
-=======
 
     public static void insertSaleOrder(int id, int order_id, String izena, float prezioa, int kantitatea) {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
->>>>>>> sqlInjections
         float quantity = kantitatea;
         float price_subtotal = quantity * prezioa;
         float bez = 0.21f * price_subtotal;
