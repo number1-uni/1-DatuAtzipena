@@ -1,5 +1,6 @@
 package dambi.exekutagarriak;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import dambi.atzipena.*;
@@ -36,13 +37,13 @@ public class MainClass {
                     saveProduct();
                     break;
                 case 2:
-                    exportProducts();
+                    exportProducts(); //hecho
                     break;
                 case 3:
                     saleOrder();
                     break;
                 case 4:
-                    saveSales();
+                    saveSales(); //hecho
                     break;
                 case 10:
                     System.out.println("Eskerrik asko programa hau erabiltzeagatik.");
@@ -60,7 +61,9 @@ public class MainClass {
 
         Scanner in = new Scanner(System.in);
         int aukera = 0;
-        do {
+        boolean salir = false;
+        while(!salir){
+
             System.out.println();
             System.out.println("PRODUKTU MENUA");
             System.out.println("====================================");
@@ -70,7 +73,7 @@ public class MainClass {
             System.out.println("10.- Irten");
             System.out.println("");
             System.out.print("Aukeratu zenbaki bat: ");
-
+try{
             aukera = in.nextInt();
 
             switch (aukera) {
@@ -84,24 +87,30 @@ public class MainClass {
                     jsona.idatziProducts(produktuak);
                     break;
                 case 10:
+                    salir=true;
                     System.out.println("Irtetzen ...");
                     //mainClass.main(args);
                     break;
                 default:
                     System.out.println("Aukera okerra. Saiatu berriz.");
             }
+        }
+        catch(InputMismatchException e){
+            System.out.println("Zenbaki bat aukeratu behar duzu");
+            in.nextInt();
+        }
+            
            // aukera = in.nextInt();
-        } while (aukera != 10);
-        in.close();
+        } 
     }
 
     public static void saveSales(){
         Postgres.connect();
 
         Scanner in = new Scanner(System.in);
-        Boolean loop = true;
         int aukera = 0;
-        while(loop == true){
+        boolean salir = false;
+        while(!salir){
             System.out.println();
             System.out.println("SALMENTA MENUA");
             System.out.println("====================================");
@@ -114,7 +123,7 @@ public class MainClass {
             System.out.println("10.- Irten");
             System.out.println("");
             System.out.print("Aukeratu zenbaki bat: ");
-
+try{
             aukera = in.nextInt();
 
             switch (aukera) {
@@ -140,16 +149,20 @@ public class MainClass {
                     jsona.irakurriSales(salmentak);
                     break;
                 case 10:
+                    salir = true;
                     System.out.println("Eskerrik asko programa hau erabiltzeagatik.");
-                    loop = false;
                     break;
                 default:
                     System.out.println("Aukera okerra. Saiatu berriz.");
             
             }
+        }
+            catch(InputMismatchException e){
+                System.out.println("Zenbaki bat aukeratu behar duzu");
+                in.nextInt();
+            }
             //aukera = in.nextInt();
         }; 
-        in.close();
     }
     
     public static void saveProduct() {
@@ -175,7 +188,6 @@ public class MainClass {
                 in.nextLine();
             }
         }
-        in.close();
     }
 
     public static void saleOrder() {
@@ -191,13 +203,12 @@ public class MainClass {
                 prezioa = in.nextFloat();
                 System.out.print("Kantitatea: ");
                 kantitatea = in.nextInt();
-                Postgres.insertProduct(id, order_id, izena, prezioa, kantitatea);
+                Postgres.insertSaleOrder(id, order_id, izena, prezioa, kantitatea);
                 check = true;
             } catch (Exception e) {
                 System.out.println("Sartu duzun balioak ez dira zuzenak. Saiatu berriz.");
                 in.nextLine();
             }
         }
-        in.close();
     }
 }

@@ -112,7 +112,7 @@ public class Postgres {
         return id;
     }
     
-    public static void insertProduct(int id,int order_id, String izena,  float prezioa, int kantitatea) {
+    public static void insertSaleOrder(int id,int order_id, String izena,  float prezioa, int kantitatea) {
         String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new java.util.Date());
         float quantity = kantitatea;
         float price_subtotal = quantity * prezioa;

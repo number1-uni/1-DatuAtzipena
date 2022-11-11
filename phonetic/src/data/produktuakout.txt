@@ -1,50 +1,12 @@
-PRODUKTUA;IZENA;PREZIOA
-Produktua [id=4, name=Samsung Galaxy S10, list_price=299.0]
-Produktua [id=3, name=Samsung Galaxy S22 Ultra, list_price=1299.0]
-Produktua [id=5, name=Samsung Cargador, list_price=11.69]
-Produktua [id=12, name=Cargador de carga r�pida, list_price=12.0]
-Produktua [id=25, name=Correa Gear S2 Sport, list_price=18.92]
-Produktua [id=19, name=Samsung Galaxy Watch5, list_price=329.9]
-Produktua [id=14, name=Cristal Templado  iPhone 6S, list_price=17.99]
-Produktua [id=31, name=ZTE Blade A52 Lite, list_price=99.0]
-Produktua [id=18, name=Cargador para Coche, list_price=15.0]
-Produktua [id=32, name=OPPO A54s 128GB+4GB RAM, list_price=169.0]
-Produktua [id=9, name=Fundas AirPods 2, list_price=3.99]
-Produktua [id=17, name=Funda AC/DC Iphone, list_price=12.95]
-Produktua [id=7, name=Protector Pantalla iPhone 12, list_price=29.99]
-Produktua [id=13, name=Cristal Templado Huawei Honor X7, list_price=12.99]
-Produktua [id=15, name=Cristal Templado Samsung Galaxy M21, list_price=15.95]
-Produktua [id=10, name=Funda iPhone 11 El Rey Le�n, list_price=12.99]
-Produktua [id=28, name=Smartwatch Cable de carga Blanco, list_price=74.05]
-Produktua [id=33, name=Samsung Galaxy Z Flip4, list_price=865.99]
-Produktua [id=21, name=Xiaomi Mi Band 3, list_price=27.18]
-Produktua [id=22, name=Xiaomi Mi Watch, list_price=103.68]
-Produktua [id=11, name=Protector C�mara iPhone 12, list_price=4.99]
-Produktua [id=20, name=Xiaomi Correa Mi Band 3, list_price=3.99]
-Produktua [id=26, name=Samsung Gear S2 Classic, list_price=108.56]
-Produktua [id=6, name=Apple iPhone 12, list_price=879.0]
-Produktua [id=27, name=Apple Watch Series 3, list_price=235.0]
-Produktua [id=29, name=Amazfit Bip 3 Pro, list_price=69.99]
-Produktua [id=30, name=Amazfit GTS 2 mini, list_price=79.99]
-Produktua [id=24, name=Samsung Gear Fit 2 Pro, list_price=52.81]
-Produktua [id=8, name=AirPods Pro (2.� generaci�n), list_price=299.0]
-Produktua [id=23, name=Samsung Galaxy Watch5 Pro, list_price=519.9]
-Produktua [id=16, name=Cristal Templado Samsung Galaxy S8, list_price=15.95]
-Produktua [id=34, name=Samsung Galaxy A52s, list_price=299.0]
-Produktua [id=35, name=Xiaomi Mi 9T Pro, list_price=299.0]
-Produktua [id=41, name=ZTE Blade A31, list_price=79.0]
-Produktua [id=42, name=ZTE Blade A51, list_price=89.0]
-Produktua [id=36, name=Xiaomi 11T, list_price=599.0]
-Produktua [id=37, name=Xiaomi Redmi 10C, list_price=169.0]
-Produktua [id=40, name=Protector pantalla Samsung Galaxy A13, list_price=9.99]
-Produktua [id=38, name=Samsung Galaxy A13, list_price=159.0]
-Produktua [id=43, name=ZTE LiveBuds, list_price=16.99]
-Produktua [id=45, name=Samsung Charger, list_price=34.99]
-Produktua [id=48, name=Huawei Mate 20 Lite, list_price=325.99]
-Produktua [id=46, name=Funda iPhone 11 Pro Max, list_price=44.99]
-Produktua [id=44, name=Protector pantalla ZTE Blade A51, list_price=9.99]
-Produktua [id=49, name=Funda  Huawei Mate 20 X Valladolid, list_price=14.99]
-Produktua [id=50, name=Funda Eibar Xiaomi Redmi 7A, list_price=14.99]
-Produktua [id=47, name=Huawei P30 Lite, list_price=189.0]
-Produktua [id=51, name=Funda Atleti Xiaomi Redmi S2, list_price=1.0]
-Produktua [id=39, name=Samsung Galaxy Buds, list_price=59.99]
+SALMENTA
+2;26;Apple MX2G2ZM/A accesorio de smartwatch Cable de carga Blanco;74.05;1;74.05;89.6;2022-10-25 12:12:08.275725
+9;10;Samsung Galaxy A13 64GB+4GB RAM;159.0;1;159.0;189.0;2020-10-30 09:41:43.126115
+10;16;Cargador para Coche;15.0;0;30.0;36.3;2022-11-09 07:22:11.276059
+11;10;Funda Atleti Xiaomi Redmi S2;32.0;2;64.0;77.44;2022-11-11 09:13:19.943
+8;36;Samsung Galaxy A13 64GB+4GB RAM;159.0;1;159.0;192.39;2020-10-28 09:41:43.126115
+5;38;Ebox Protector pantalla vidrio Samsung Galaxy A13;9.99;5;49.95;60.44;2021-10-28 07:17:47.981528
+6;44;Apple Funda Silicone Case iPhone 11 Pro Max;44.99;1;44.99;54.44;2020-10-28 09:41:43.126115
+3;27;Amazfit Bip 3 Pro;69.99;3;209.97;254.06;2021-09-26 06:29:35.595509
+1;25;Apple Watch Series 3 42mm;235.0;1;235.0;284.35;2022-07-25 11:49:33.67354
+4;25;Apple Watch Series 3 42mm;235.0;2;470.0;568.7;2022-01-28 06:36:15.379082
+7;4;Apple iPhone 12 256GB;879.0;1;879.0;1063.59;2022-12-28 09:41:43.126115
