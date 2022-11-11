@@ -34,6 +34,7 @@ public class MainClass {
 
             switch (aukera) {
                 case 1:
+                    //Postgres.insertErab(4, "Peru", "Malatsetxeberria");
                     saveProduct();
                     break;
                 case 2:
