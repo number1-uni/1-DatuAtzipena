@@ -6,9 +6,76 @@ import java.util.Scanner;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import dambi.pojoak.produktua.*;
+import dambi.pojoak.salmenta.*;
 
 public class Postgres {
+
     private static Scanner in = new Scanner(System.in);
+    private static String url = "jdbc:postgresql://192.168.65.13:5432/PhoneTic";
+    private static String user = "DA"; // !IMPORTANT! username
+    private static String password = "admin"; // !IMPORTANT! password
+    public static Salmentak salmentak = new Salmentak();
+    public static Produktuak produktuak = new Produktuak();
+
+    public static Connection connect() {
+        Connection conn = null;
+        try {
+            conn = DriverManager.getConnection(url, user, password);
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return conn;
+    }
+
+    /**
+     * Datu baseko produktuak Lista batean gordeko dira.
+     * Zutabeak: id, name, list_price.
+     * 
+     * @return Produktuak List
+     */
+    public static Produktuak produktuakGorde() {
+        String sql = "SELECT * FROM product_template";
+
+        try (Connection conn = connect();
+                Statement stmt = conn.createStatement();
+                ResultSet rs = stmt.executeQuery(sql)) {
+            while (rs.next()) {
+                produktuak.add(new Produktua(rs.getInt("id"), rs.getString("name"), rs.getDouble("list_price")));
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return produktuak;
+    }
+
+    /**
+     * Datu baseko salmentak Lista batean gordeko dira.
+     * Zutabeak: id, product_id, name, price_unit, qty_invoiced,
+     * price_subtotal, price_total, write_date.
+     * 
+     * @return Salmentak List
+     */
+    public static Salmentak salmentakGorde() {
+        String sql = "SELECT * FROM sale_order_line";
+
+        try (Connection conn = connect();
+                Statement stmt = conn.createStatement();
+                ResultSet rs = stmt.executeQuery(sql)) {
+            while (rs.next()) {
+
+                salmentak.add(new Salmenta(rs.getInt("id"), rs.getInt("product_id"), rs.getString("name"),
+                        rs.getDouble("price_unit"), rs.getInt("qty_invoiced"),
+                        rs.getDouble("price_subtotal"), rs.getDouble("price_total"), rs.getString("write_date")));
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return salmentak;
+    }
     
     public static void insertProduct(int id, String izena, String deskripzioa, float prezioa) {
 
@@ -21,7 +88,7 @@ public class Postgres {
                 + "',0,'none',NULL,NULL,NULL,'receive','no-message',NULL,'false',0,'none','no','order',false);";
 
         try {
-            Connection conn = Db.connect();
+            Connection conn = connect();
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.executeUpdate();
         } catch (Exception ex) {
@@ -33,7 +100,7 @@ public class Postgres {
         String sql = "SELECT id FROM public.product_template ORDER BY id DESC LIMIT 1";
         int id = 0;
         try {
-            Connection conn = Db.connect();
+            Connection conn = connect();
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
@@ -59,7 +126,7 @@ public class Postgres {
                     + timeStamp + "', 2, '"+ timeStamp + "', null);";
 
         try {
-            Connection conn = Db.connect();
+            Connection conn = connect();
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.executeUpdate();
             System.out.println("Produktua ondo sortu da.");
@@ -72,7 +139,7 @@ public class Postgres {
         String sql = "SELECT id FROM public.sale_order_line ORDER BY id DESC LIMIT 1";
         int id = 0;
         try {
-            Connection conn = Db.connect();
+            Connection conn = connect();
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
@@ -88,7 +155,7 @@ public class Postgres {
         String sql = "SELECT order_id FROM public.sale_order_line ORDER BY id DESC LIMIT 1";
         int id = 0;
         try {
-            Connection conn = Db.connect();
+            Connection conn = connect();
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
@@ -102,15 +169,15 @@ public class Postgres {
 
     public static String selectProductName(){
         int produktuaIndex;
-        Db.produktuakGorde();
+        produktuakGorde();
         System.out.println("PRODUKTUA SORTZEKO MENUA");
-        for (int i = 0; i < Db.produktuak.getProduktuak().size(); i++) {
-            System.out.println((i+1) + ". " + Db.produktuak.getProduktuak().get(i).getName());
+        for (int i = 0; i < produktuak.getProduktuak().size(); i++) {
+            System.out.println((i+1) + ". " + produktuak.getProduktuak().get(i).getName());
         }
         System.out.println("------------------------------------");
         System.out.print("Sartu produktuaren zenbakia:");
         produktuaIndex = in.nextInt();
-        String izena = Db.produktuak.getProduktuak().get(produktuaIndex-1).getName();
+        String izena = produktuak.getProduktuak().get(produktuaIndex-1).getName();
         return izena;
     }
 }

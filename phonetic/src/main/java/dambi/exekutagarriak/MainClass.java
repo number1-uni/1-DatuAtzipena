@@ -55,8 +55,8 @@ public class MainClass {
     }
 
     public static void exportProducts(){
-        Db.connect();
-        produktuak = Db.produktuakGorde();
+        Postgres.connect();
+        produktuak = Postgres.produktuakGorde();
 
         Scanner in = new Scanner(System.in);
         int aukera = 0;
@@ -90,16 +90,18 @@ public class MainClass {
                 default:
                     System.out.println("Aukera okerra. Saiatu berriz.");
             }
+           // aukera = in.nextInt();
         } while (aukera != 10);
         in.close();
     }
 
     public static void saveSales(){
-        Db.connect();
+        Postgres.connect();
 
         Scanner in = new Scanner(System.in);
+        Boolean loop = true;
         int aukera = 0;
-        do {
+        while(loop == true){
             System.out.println();
             System.out.println("SALMENTA MENUA");
             System.out.println("====================================");
@@ -117,15 +119,15 @@ public class MainClass {
 
             switch (aukera) {
                 case 1:
-                    salmentak = Db.salmentakGorde();
+                    salmentak = Postgres.salmentakGorde();
                     csva.idatziSales(salmentak);
                     break;
                 case 2:
-                    salmentak = Db.salmentakGorde();
+                    salmentak = Postgres.salmentakGorde();
                     xmla.idatziSales(salmentak);
                     break;
                 case 3:
-                    salmentak = Db.salmentakGorde();
+                    salmentak = Postgres.salmentakGorde();
                     jsona.idatziSales(salmentak);
                     break;
                 case 4:
@@ -139,11 +141,14 @@ public class MainClass {
                     break;
                 case 10:
                     System.out.println("Eskerrik asko programa hau erabiltzeagatik.");
+                    loop = false;
                     break;
                 default:
                     System.out.println("Aukera okerra. Saiatu berriz.");
+            
             }
-        } while (aukera != 10);
+            //aukera = in.nextInt();
+        }; 
         in.close();
     }
     
