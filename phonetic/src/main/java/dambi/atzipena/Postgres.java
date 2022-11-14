@@ -73,8 +73,8 @@ public class Postgres {
             while (rs.next()) {
 
                 salmentak.add(new Salmenta(rs.getInt("id"), rs.getInt("product_id"), rs.getString("name"),
-                        rs.getDouble("price_unit"), rs.getInt("qty_invoiced"),
-                        rs.getDouble("price_subtotal"), rs.getDouble("price_total"), rs.getString("write_date")));
+                        rs.getFloat("price_unit"), rs.getInt("qty_invoiced"),
+                        rs.getFloat("price_subtotal"), rs.getFloat("price_total"), rs.getString("write_date")));
             }
         } catch (SQLException e) {
             System.out.println(e.getMessage());
@@ -150,31 +150,29 @@ public class Postgres {
         float price_total = quantity * prezioa + bez;
         float priceTaxUnit = 0.21f * prezioa;
 
-        String sql = "INSERT INTO public.sale_order_line VALUES (?, 7, ?, 10,'invoiced', ?, ?, ?, ?, ?, ?, ?, 0.00, 10, ?, ?,"
-                +
-                "'stock_move', 0.00, 0.00, 0.00, ?, null, null, 2, 1, 1, 25, null, null, 'sale', 0, null, null, 0, 2, ?,"
-                +
-                " 2, ?, null);";
+        String sql = "INSERT INTO public.sale_order_line VALUES (?, ?, ?, 10,'invoiced', ?, ?, ?, ?, ?, ?, ?, 0.00, 10, ?, ?,"
+                +"'stock_move', 0.00, 0.00, 0.00, ?, null, null, 2, 1, 1, 25, null, null, 'sale', 0, null, null, 0, 2, ?,"
+                +" 2, ?, null);";
 
         try {
             Connection conn = connect();
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setInt(1, id);
-            stmt.setString(2, izena);
-            stmt.setFloat(3, prezioa);
-            stmt.setFloat(4, price_subtotal);
-            stmt.setFloat(5, bez);
-            stmt.setFloat(6, price_total);
-            stmt.setFloat(7, prezioa);
-            stmt.setFloat(8, priceTaxUnit);
-            stmt.setFloat(9, prezioa);
-            stmt.setFloat(10, quantity);
-            stmt.setInt(11, kantitatea);
-            stmt.setFloat(12, quantity);
-            stmt.setTimestamp(13, timestamp);
+            stmt.setInt(2, order_id);
+            stmt.setString(3, izena);
+            stmt.setFloat(4, prezioa);
+            stmt.setFloat(5, price_subtotal);
+            stmt.setFloat(6, bez);
+            stmt.setFloat(7, price_total);
+            stmt.setFloat(8, prezioa);
+            stmt.setFloat(9, priceTaxUnit);
+            stmt.setFloat(10, prezioa);
+            stmt.setFloat(11, quantity);
+            stmt.setInt(12, kantitatea);
+            stmt.setFloat(13, quantity);
             stmt.setTimestamp(14, timestamp);
+            stmt.setTimestamp(15, timestamp);
             stmt.executeUpdate();
-            System.out.println("Produktua ondo sortu da.");
         } catch (Exception ex) {
             System.out.println("Exception : " + ex);
         }
@@ -205,7 +203,7 @@ public class Postgres {
      * @return
      */
     public static int findOrderId() {
-        String sql = "SELECT order_id FROM public.sale_order_line ORDER BY id DESC LIMIT 1";
+        String sql = "SELECT id FROM public.sale_order ORDER BY id DESC LIMIT 1";
         int id = 0;
         try {
             Connection conn = connect();
@@ -220,6 +218,29 @@ public class Postgres {
         return id;
     }
 
+    public static void createSaleOrderId(){
+        int order_id = findOrderId() +1;
+        String name = "S00" + order_id; 
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+        String sql = "INSERT INTO public.sale_order VALUES (?, null, null, null, null, null, ?, null, null, null, 'sale', ?, null, true, false, ?,"
+        + "2, 24, 24, 24, 1, 1, null, 'to invoice', '<p><br></p>', 0.00, 0.00, 0.00, 1.000000, null, 2, 1, 1, null, null, null,"
+        + " true, 2, 1, ?,null, null, 'direct', 1, null, null, null);";
+
+        try {
+            Connection conn = connect();
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setInt(1, order_id);
+            stmt.setString(2, name);
+            stmt.setTimestamp(3, timestamp);
+            stmt.setTimestamp(4, timestamp);
+            stmt.setTimestamp(5, timestamp);
+
+            stmt.executeUpdate();
+        } catch (Exception ex) {
+            System.out.println("Exception : " + ex);
+        }
+    }
+
     /**
      * Salmentako produktua aukeratzeko metodoa.
      * @return izena
@@ -227,7 +248,6 @@ public class Postgres {
     public static String selectProductName() {
         int produktuaIndex;
         produktuakGorde();
-        System.out.println("PRODUKTUA SORTZEKO MENUA");
         for (int i = 0; i < produktuak.getProduktuak().size(); i++) {
             System.out.println((i + 1) + ". " + produktuak.getProduktuak().get(i).getName());
         }
@@ -236,5 +256,18 @@ public class Postgres {
         produktuaIndex = in.nextInt();
         String izena = produktuak.getProduktuak().get(produktuaIndex - 1).getName();
         return izena;
+    }
+
+    public static void importSalmenta(Salmentak salmentak){
+        createSaleOrderId();
+        for (int i = 0; i < salmentak.getSalmentak().size(); i++) {
+            int id = findIdSale() + 1;
+            int order_id = findOrderId();
+            String izena = salmentak.getSalmentak().get(i).getName();
+            float prezioa = salmentak.getSalmentak().get(i).getPrice_unit();
+            int kantitatea = salmentak.getSalmentak().get(i).getQty_invoiced();
+            insertSaleOrder(id, order_id, izena, prezioa, kantitatea);
+        }
+
     }
 }

@@ -1,1 +1,287 @@
-[{"id":4,"name":"Samsung Galaxy S10","list_price":299.0},{"id":3,"name":"Samsung Galaxy S22 Ultra","list_price":1299.0},{"id":5,"name":"Samsung Cargador","list_price":11.69},{"id":12,"name":"Cargador de carga rápida","list_price":12.0},{"id":25,"name":"Correa Gear S2 Sport","list_price":18.92},{"id":19,"name":"Samsung Galaxy Watch5","list_price":329.9},{"id":14,"name":"Cristal Templado  iPhone 6S","list_price":17.99},{"id":31,"name":"ZTE Blade A52 Lite","list_price":99.0},{"id":18,"name":"Cargador para Coche","list_price":15.0},{"id":32,"name":"OPPO A54s 128GB+4GB RAM","list_price":169.0},{"id":9,"name":"Fundas AirPods 2","list_price":3.99},{"id":17,"name":"Funda AC/DC Iphone","list_price":12.95},{"id":7,"name":"Protector Pantalla iPhone 12","list_price":29.99},{"id":13,"name":"Cristal Templado Huawei Honor X7","list_price":12.99},{"id":15,"name":"Cristal Templado Samsung Galaxy M21","list_price":15.95},{"id":10,"name":"Funda iPhone 11 El Rey León","list_price":12.99},{"id":28,"name":"Smartwatch Cable de carga Blanco","list_price":74.05},{"id":33,"name":"Samsung Galaxy Z Flip4","list_price":865.99},{"id":21,"name":"Xiaomi Mi Band 3","list_price":27.18},{"id":22,"name":"Xiaomi Mi Watch","list_price":103.68},{"id":11,"name":"Protector Cámara iPhone 12","list_price":4.99},{"id":20,"name":"Xiaomi Correa Mi Band 3","list_price":3.99},{"id":26,"name":"Samsung Gear S2 Classic","list_price":108.56},{"id":6,"name":"Apple iPhone 12","list_price":879.0},{"id":27,"name":"Apple Watch Series 3","list_price":235.0},{"id":29,"name":"Amazfit Bip 3 Pro","list_price":69.99},{"id":30,"name":"Amazfit GTS 2 mini","list_price":79.99},{"id":24,"name":"Samsung Gear Fit 2 Pro","list_price":52.81},{"id":8,"name":"AirPods Pro (2.ª generación)","list_price":299.0},{"id":23,"name":"Samsung Galaxy Watch5 Pro","list_price":519.9},{"id":16,"name":"Cristal Templado Samsung Galaxy S8","list_price":15.95},{"id":34,"name":"Samsung Galaxy A52s","list_price":299.0},{"id":35,"name":"Xiaomi Mi 9T Pro","list_price":299.0},{"id":41,"name":"ZTE Blade A31","list_price":79.0},{"id":42,"name":"ZTE Blade A51","list_price":89.0},{"id":36,"name":"Xiaomi 11T","list_price":599.0},{"id":37,"name":"Xiaomi Redmi 10C","list_price":169.0},{"id":40,"name":"Protector pantalla Samsung Galaxy A13","list_price":9.99},{"id":38,"name":"Samsung Galaxy A13","list_price":159.0},{"id":43,"name":"ZTE LiveBuds","list_price":16.99},{"id":45,"name":"Samsung Charger","list_price":34.99},{"id":52,"name":"Pistola","list_price":32.0},{"id":53,"name":"Pistola","list_price":435.0},{"id":54,"name":"Pique","list_price":0.0},{"id":55,"name":"toryilla","list_price":1231.0},{"id":56,"name":"lAmARCA","list_price":159.0},{"id":57,"name":"Telefono pepito","list_price":120.0},{"id":48,"name":"Huawei Mate 20 Lite","list_price":325.99},{"id":46,"name":"Funda iPhone 11 Pro Max","list_price":44.99},{"id":44,"name":"Protector pantalla ZTE Blade A51","list_price":9.99},{"id":49,"name":"Funda  Huawei Mate 20 X Valladolid","list_price":14.99},{"id":50,"name":"Funda Eibar Xiaomi Redmi 7A","list_price":14.99},{"id":47,"name":"Huawei P30 Lite","list_price":189.0},{"id":51,"name":"Funda Atleti Xiaomi Redmi S2","list_price":1.0},{"id":39,"name":"Samsung Galaxy Buds","list_price":59.99}]
+[
+    {
+        "id": 4,
+        "name": "Samsung Galaxy S10",
+        "list_price": 299.0
+    },
+    {
+        "id": 3,
+        "name": "Samsung Galaxy S22 Ultra",
+        "list_price": 1299.0
+    },
+    {
+        "id": 31,
+        "name": "ZTE Blade A52 Lite",
+        "list_price": 99.0
+    },
+    {
+        "id": 25,
+        "name": "Correa Gear S2 Sport",
+        "list_price": 18.92
+    },
+    {
+        "id": 19,
+        "name": "Samsung Galaxy Watch5",
+        "list_price": 329.9
+    },
+    {
+        "id": 14,
+        "name": "Cristal Templado  iPhone 6S",
+        "list_price": 17.99
+    },
+    {
+        "id": 32,
+        "name": "OPPO A54s 128GB+4GB RAM",
+        "list_price": 169.0
+    },
+    {
+        "id": 9,
+        "name": "Fundas AirPods 2",
+        "list_price": 3.99
+    },
+    {
+        "id": 7,
+        "name": "Protector Pantalla iPhone 12",
+        "list_price": 29.99
+    },
+    {
+        "id": 13,
+        "name": "Cristal Templado Huawei Honor X7",
+        "list_price": 12.99
+    },
+    {
+        "id": 10,
+        "name": "Funda iPhone 11 El Rey León",
+        "list_price": 12.99
+    },
+    {
+        "id": 28,
+        "name": "Smartwatch Cable de carga Blanco",
+        "list_price": 74.05
+    },
+    {
+        "id": 33,
+        "name": "Samsung Galaxy Z Flip4",
+        "list_price": 865.99
+    },
+    {
+        "id": 6,
+        "name": "Apple iPhone 12",
+        "list_price": 879.0
+    },
+    {
+        "id": 22,
+        "name": "Xiaomi Mi Watch",
+        "list_price": 103.68
+    },
+    {
+        "id": 11,
+        "name": "Protector Cámara iPhone 12",
+        "list_price": 4.99
+    },
+    {
+        "id": 12,
+        "name": "Cargador de carga rápida",
+        "list_price": 12.0
+    },
+    {
+        "id": 20,
+        "name": "Xiaomi Correa Mi Band 3",
+        "list_price": 3.99
+    },
+    {
+        "id": 30,
+        "name": "Amazfit GTS 2 mini",
+        "list_price": 79.99
+    },
+    {
+        "id": 24,
+        "name": "Samsung Gear Fit 2 Pro",
+        "list_price": 52.81
+    },
+    {
+        "id": 23,
+        "name": "Samsung Galaxy Watch5 Pro",
+        "list_price": 519.9
+    },
+    {
+        "id": 16,
+        "name": "Cristal Templado Samsung Galaxy S8",
+        "list_price": 15.95
+    },
+    {
+        "id": 15,
+        "name": "Cristal Templado Samsung Galaxy M21",
+        "list_price": 15.95
+    },
+    {
+        "id": 26,
+        "name": "Samsung Gear S2 Classic",
+        "list_price": 108.56
+    },
+    {
+        "id": 17,
+        "name": "Funda AC/DC Iphone",
+        "list_price": 12.95
+    },
+    {
+        "id": 8,
+        "name": "AirPods Pro (2.ª generación)",
+        "list_price": 299.0
+    },
+    {
+        "id": 5,
+        "name": "Samsung Cargador",
+        "list_price": 11.69
+    },
+    {
+        "id": 27,
+        "name": "Apple Watch Series 3",
+        "list_price": 235.0
+    },
+    {
+        "id": 29,
+        "name": "Amazfit Bip 3 Pro",
+        "list_price": 69.99
+    },
+    {
+        "id": 18,
+        "name": "Cargador para Coche",
+        "list_price": 15.0
+    },
+    {
+        "id": 21,
+        "name": "Xiaomi Mi Band 3",
+        "list_price": 27.18
+    },
+    {
+        "id": 34,
+        "name": "Samsung Galaxy A52s",
+        "list_price": 299.0
+    },
+    {
+        "id": 41,
+        "name": "ZTE Blade A31",
+        "list_price": 79.0
+    },
+    {
+        "id": 35,
+        "name": "Xiaomi Mi 9T Pro",
+        "list_price": 299.0
+    },
+    {
+        "id": 36,
+        "name": "Xiaomi 11T",
+        "list_price": 599.0
+    },
+    {
+        "id": 42,
+        "name": "ZTE Blade A51",
+        "list_price": 89.0
+    },
+    {
+        "id": 37,
+        "name": "Xiaomi Redmi 10C",
+        "list_price": 169.0
+    },
+    {
+        "id": 38,
+        "name": "Samsung Galaxy A13",
+        "list_price": 159.0
+    },
+    {
+        "id": 40,
+        "name": "Protector pantalla Samsung Galaxy A13",
+        "list_price": 9.99
+    },
+    {
+        "id": 45,
+        "name": "Samsung Charger",
+        "list_price": 34.99
+    },
+    {
+        "id": 52,
+        "name": "Pistola",
+        "list_price": 32.0
+    },
+    {
+        "id": 53,
+        "name": "Pistola",
+        "list_price": 435.0
+    },
+    {
+        "id": 54,
+        "name": "Pique",
+        "list_price": 0.0
+    },
+    {
+        "id": 55,
+        "name": "toryilla",
+        "list_price": 1231.0
+    },
+    {
+        "id": 56,
+        "name": "lAmARCA",
+        "list_price": 159.0
+    },
+    {
+        "id": 57,
+        "name": "Telefono pepito",
+        "list_price": 120.0
+    },
+    {
+        "id": 58,
+        "name": "Mugikorra",
+        "list_price": 180.0
+    },
+    {
+        "id": 59,
+        "name": "Ordenagailu jose",
+        "list_price": 100.0
+    },
+    {
+        "id": 44,
+        "name": "Protector pantalla ZTE Blade A51",
+        "list_price": 9.99
+    },
+    {
+        "id": 48,
+        "name": "Huawei Mate 20 Lite",
+        "list_price": 325.99
+    },
+    {
+        "id": 46,
+        "name": "Funda iPhone 11 Pro Max",
+        "list_price": 44.99
+    },
+    {
+        "id": 50,
+        "name": "Funda Eibar Xiaomi Redmi 7A",
+        "list_price": 14.99
+    },
+    {
+        "id": 47,
+        "name": "Huawei P30 Lite",
+        "list_price": 189.0
+    },
+    {
+        "id": 39,
+        "name": "Samsung Galaxy Buds",
+        "list_price": 59.99
+    },
+    {
+        "id": 43,
+        "name": "ZTE LiveBuds",
+        "list_price": 16.99
+    },
+    {
+        "id": 49,
+        "name": "Funda  Huawei Mate 20 X Valladolid",
+        "list_price": 14.99
+    },
+    {
+        "id": 51,
+        "name": "Funda Atleti Xiaomi Redmi S2",
+        "list_price": 1.0
+    }
+]

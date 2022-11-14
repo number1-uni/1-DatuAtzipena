@@ -10,9 +10,12 @@ import dambi.pojoak.salmenta.*;
 public class Main {
     private static Produktuak produktuak = new Produktuak();
     private static Salmentak salmentak = new Salmentak();
-    private static Csva csva = new Csva("produktuak.csv", "produktuakout.txt");
-    static XMLa xmla = new XMLa("produktuakout.csv", "produktuakout.xml");
-    private static Jsona jsona = new Jsona("produktuak.csv", "produktuakout.json");
+    private static Csva csvaProduct = new Csva("produktuakout.txt", "produktuakout.txt");
+    private static XMLa xmlaProduct = new XMLa("produktuakout.xml", "produktuakout.xml");
+    private static Jsona jsonaProduct = new Jsona("produktuakout.json", "produktuakout.json");
+    private static Csva csvaSales = new Csva("salmentakOut.txt", "salmentakOut.txt");
+    private static XMLa xmlaSales = new XMLa("salmentakOut.xml", "salmentakOut.xml");
+    private static Jsona jsonaSales = new Jsona("salmentakOut.json", "salmentakOut.json");
     private static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -80,13 +83,13 @@ public class Main {
 
                 switch (aukera) {
                     case 1:
-                        csva.idatziProducts(produktuak);
+                        csvaProduct.idatziProducts(produktuak);
                         break;
                     case 2:
-                        xmla.idatziProducts(produktuak);
+                        xmlaProduct.idatziProducts(produktuak);
                         break;
                     case 3:
-                        jsona.idatziProducts(produktuak);
+                        jsonaProduct.idatziProducts(produktuak);
                         break;
                     case 10:
                         salir = true;
@@ -119,9 +122,9 @@ public class Main {
             System.out.println("1.- Salmentak CSV fitxategian gorde");
             System.out.println("2.- Salmentak XML fitxategian gorde");
             System.out.println("3.- Salmentak JSON fitxategian gorde");
-            System.out.println("4.- Salmentak CSV fitxategia irakurri eta bistaratu");
-            System.out.println("5.- Salmentak XML fitxategia irakurri eta bistaratu");
-            System.out.println("6.- Salmentak XML fitxategia irakurri eta bistaratu");
+            System.out.println("4.- Salmentak CSV fitxategia irakurri eta inportatu");
+            System.out.println("5.- Salmentak XML fitxategia irakurri eta inportatu");
+            System.out.println("6.- Salmentak JSON fitxategia irakurri eta inportatu");
             System.out.println("10.- Irten");
             System.out.println("");
             System.out.print("Aukeratu zenbaki bat: ");
@@ -131,24 +134,30 @@ public class Main {
                 switch (aukera) {
                     case 1:
                         salmentak = Postgres.salmentakGorde();
-                        csva.idatziSales(salmentak);
+                        csvaSales.idatziSales(salmentak);
                         break;
                     case 2:
                         salmentak = Postgres.salmentakGorde();
-                        xmla.idatziSales(salmentak);
+                        xmlaSales.idatziSales(salmentak);
                         break;
                     case 3:
                         salmentak = Postgres.salmentakGorde();
-                        jsona.idatziSales(salmentak);
+                        jsonaSales.idatziSales(salmentak);
                         break;
                     case 4:
-                        csva.irakurriSales(salmentak);
+                        csvaSales.irakurriSales(salmentak);
+                        System.out.println(salmentak);
+                        Postgres.importSalmenta(salmentak);
                         break;
                     case 5:
-                        xmla.irakurriSales(salmentak);
+                        xmlaSales.irakurriSales(salmentak);
+                        System.out.println(salmentak);
+                        Postgres.importSalmenta(salmentak);
                         break;
                     case 6:
-                        jsona.irakurriSales(salmentak);
+                        jsonaSales.irakurriSales(salmentak);
+                        System.out.println(salmentak);
+                        Postgres.importSalmenta(salmentak);
                         break;
                     case 10:
                         salir = true;
@@ -178,7 +187,7 @@ public class Main {
             try {
                 System.out.println("PRODUKTUA SORTZEKO MENUA");
                 System.out.print("Izena: ");
-                izena = in.nextLine();
+                izena = in.next();
                 System.out.print("Deskripzioa: ");
                 deskripzioa = in.nextLine();
                 System.out.print("Prezioa: ");
@@ -198,6 +207,7 @@ public class Main {
      */
     public static void saleOrder() {
         String izena = Postgres.selectProductName();
+        Postgres.createSaleOrderId();
         boolean check = false;
         float prezioa;
         int kantitatea;
@@ -211,6 +221,7 @@ public class Main {
                 kantitatea = in.nextInt();
                 Postgres.insertSaleOrder(id, order_id, izena, prezioa, kantitatea);
                 check = true;
+                System.out.println("Salmenta ondo sortu da.");
             } catch (Exception e) {
                 System.out.println("Sartu duzun balioak ez dira zuzenak. Saiatu berriz.");
                 in.nextLine();

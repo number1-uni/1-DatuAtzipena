@@ -37,7 +37,6 @@ public class XMLa {
     } catch (Exception e) {
       e.printStackTrace();
     }
-    System.out.println(salmentak);
     System.out.println("Ondo irakurri da XMLa.");
   }
 

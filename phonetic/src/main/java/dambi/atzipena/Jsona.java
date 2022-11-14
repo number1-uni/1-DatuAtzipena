@@ -51,7 +51,6 @@ public class Jsona {
         salmentak.add(salmenta);
 
       }
-      System.out.println(salmentak);
       System.out.println("Ondo irakurri da JSONa.");
     } catch (Exception e) {
       e.printStackTrace();

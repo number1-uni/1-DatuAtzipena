@@ -43,10 +43,10 @@ public class Csva {
             Integer.parseInt(zatiak[0]), 
             Integer.parseInt(zatiak[1]), 
             zatiak[2],
-            Double.parseDouble(zatiak[3]), 
+            Float.parseFloat(zatiak[3]), 
             Integer.parseInt(zatiak[4]),
-            Double.parseDouble(zatiak[5]),
-            Double.parseDouble(zatiak[6]),
+            Float.parseFloat(zatiak[5]),
+            Float.parseFloat(zatiak[6]),
             zatiak[7]);
 
           salmentak.add(salmenta);
@@ -57,7 +57,6 @@ public class Csva {
         }
       }
       br.close();
-      System.out.println(salmentak);
     } catch (Exception e) {
       e.printStackTrace();
     } finally {

@@ -13,18 +13,18 @@ public class Salmenta {
   private int id;
   private int product_id;
   private String name;
-  private double price_unit;
+  private float price_unit;
   private int qty_invoiced;
-  private double price_subtotal;
-  private double price_total;
+  private float price_subtotal;
+  private float price_total;
   private String write_date;
 
 
   public Salmenta() {
   }
   
-  public Salmenta(int id, int product_id, String name, double price_unit, int qty_invoiced, double price_subtotal,
-      double price_total, String write_date) {
+  public Salmenta(int id, int product_id, String name, float price_unit, int qty_invoiced, float price_subtotal,
+      float price_total, String write_date) {
     this.id = id;
     this.product_id = product_id;
     this.name = name;
@@ -63,12 +63,12 @@ public class Salmenta {
     this.name = name;
   }
 
-  public double getPrice_unit() {
+  public float getPrice_unit() {
     return price_unit;
   }
 
   @XmlElement(name = "price_unit")
-  public void setPrice_unit(double price_unit) {
+  public void setPrice_unit(float price_unit) {
     this.price_unit = price_unit;
   }
 
@@ -81,12 +81,12 @@ public class Salmenta {
     this.qty_invoiced = qty_invoiced;
   }
 
-  public double getPrice_subtotal() {
+  public float getPrice_subtotal() {
     return price_subtotal;
   }
 
   @XmlElement(name = "price_subtotal")
-  public void setPrice_subtotal(double price_subtotal) {
+  public void setPrice_subtotal(float price_subtotal) {
     this.price_subtotal = price_subtotal;
   }
 
@@ -95,7 +95,7 @@ public class Salmenta {
   }
 
   @XmlElement(name = "price_total")
-  public void setPrice_total(double price_total) {
+  public void setPrice_total(float price_total) {
     this.price_total = price_total;
   }
 
