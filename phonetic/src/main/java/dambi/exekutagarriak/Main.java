@@ -55,6 +55,9 @@ public class Main {
         in.close();
     }
 
+    /**
+     * Produktuak fitxategi ezberdinetan gordetzeko aukera ematen du.
+     */
     public static void exportProducts() {
         Postgres.connect();
         produktuak = Postgres.produktuakGorde();
@@ -100,6 +103,10 @@ public class Main {
         }
     }
 
+    /**
+     * Salmentak fitxategi ezberdinetan gordetzeko aukera ematen du 
+     * eta fitxategi bat irakurri eta bistaratzeko aukera ematen du.
+     */
     public static void saveSales() {
         Postgres.connect();
 
@@ -159,6 +166,9 @@ public class Main {
         ;
     }
 
+    /**
+     * Produktu bat sortzeko menua.
+     */
     public static void saveProduct() {
         String izena, deskripzioa;
         float prezioa;
@@ -183,6 +193,9 @@ public class Main {
         }
     }
 
+    /**
+     * Salmenta bat sortzeko menua.
+     */
     public static void saleOrder() {
         String izena = Postgres.selectProductName();
         boolean check = false;

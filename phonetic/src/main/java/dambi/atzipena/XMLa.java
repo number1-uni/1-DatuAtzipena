@@ -22,6 +22,10 @@ public class XMLa {
     this.strFileOut = strFileIn + ".csv";
   }
 
+  /**
+   * XML fitxategia irakurtzen du eta salmentak ArrayList-ean gordeko da. 
+   * @param salmentak
+   */
   public void irakurriSales(Salmentak salmentak) {
     try {
       File file = new File("src//data//" + strFileIn);
@@ -37,6 +41,10 @@ public class XMLa {
     System.out.println("Ondo irakurri da XMLa.");
   }
 
+  /**
+   * produktuak ArrayList-a irakurtzen du eta produktuak xml fitxategian idatzen ditu.
+   * @param produktuak
+   */
   public int idatziProducts(Produktuak produktuak) {
     int kopurua = 0;
     try {
@@ -52,6 +60,10 @@ public class XMLa {
     return kopurua;
   }
 
+  /**
+   * salmentak ArrayList-a irakurtzen du eta salmentak xml fitxategian idatzen ditu.
+   * @param salmentak
+   */
   public int idatziSales(Salmentak salmentak) {
     int kopurua = 0;
     try {

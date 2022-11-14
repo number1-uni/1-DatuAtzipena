@@ -21,6 +21,11 @@ public class Postgres {
     public static Salmentak salmentak = new Salmentak();
     public static Produktuak produktuak = new Produktuak();
 
+    /**
+     * Zerbitzariarekin konektatuko da, 
+     * IP/DB/USER/PASS erabiliz.
+     * @return Connection
+     */
     public static Connection connect() {
         Connection conn = null;
         try {
@@ -77,6 +82,13 @@ public class Postgres {
         return salmentak;
     }
 
+    /**
+     * Datu basean produktu bat sartuko da.
+     * @param id
+     * @param izena
+     * @param deskripzioa
+     * @param prezioa
+     */
     public static void insertProduct(int id, String izena, String deskripzioa, float prezioa) {
 
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
@@ -102,6 +114,10 @@ public class Postgres {
         }
     }
 
+    /**
+     * Azkenengo produktuaren id-a itzultzen du.
+     * @return id
+     */
     public static int findIdProduct() {
         String sql = "SELECT id FROM public.product_template ORDER BY id DESC LIMIT 1";
         int id = 0;
@@ -118,6 +134,14 @@ public class Postgres {
         return id;
     }
 
+    /**
+     * Datu basean salmenta bat sartuko da.
+     * @param id
+     * @param order_id
+     * @param izena
+     * @param prezioa
+     * @param kantitatea
+     */
     public static void insertSaleOrder(int id, int order_id, String izena, float prezioa, int kantitatea) {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         float quantity = kantitatea;
@@ -156,6 +180,10 @@ public class Postgres {
         }
     }
 
+    /**
+     * Azkenengo salmentaren id-a itzultzen du.
+     * @return
+     */
     public static int findIdSale() {
         String sql = "SELECT id FROM public.sale_order_line ORDER BY id DESC LIMIT 1";
         int id = 0;
@@ -172,6 +200,10 @@ public class Postgres {
         return id;
     }
 
+    /**
+     * Azkenengo salmentaren order_id-a itzultzen du.
+     * @return
+     */
     public static int findOrderId() {
         String sql = "SELECT order_id FROM public.sale_order_line ORDER BY id DESC LIMIT 1";
         int id = 0;
@@ -188,6 +220,10 @@ public class Postgres {
         return id;
     }
 
+    /**
+     * Salmentako produktua aukeratzeko metodoa.
+     * @return izena
+     */
     public static String selectProductName() {
         int produktuaIndex;
         produktuakGorde();

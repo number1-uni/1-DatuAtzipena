@@ -23,6 +23,10 @@ public class Csva {
     this.strFileOut = strFileIn + "out.csv";
   }
 
+  /**
+   * Csv fitxategia irakurtzen du eta salmentak ArrayList-ean gordeko da. 
+   * @param salmentak
+   */
   public void irakurriSales(Salmentak salmentak) {
 
     BufferedReader br = null;
@@ -65,6 +69,10 @@ public class Csva {
     }
   }
 
+  /**
+   * produktuak ArrayList-a irakurtzen du eta produktuak csv fitxategian idatzen ditu.
+   * @param produktuak
+   */
   public int idatziProducts(Produktuak produktuak) {
     int kopurua = 0;
 
@@ -83,6 +91,10 @@ public class Csva {
     return kopurua;
   }
 
+  /**
+   * salmentak ArrayList-a irakurtzen du eta salmentak csv fitxategian idatzen ditu.
+   * @param salmentak
+   */
   public int idatziSales(Salmentak salmentak) {
     int kopurua = 0;
 

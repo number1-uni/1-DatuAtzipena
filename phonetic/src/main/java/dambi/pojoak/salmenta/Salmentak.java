@@ -14,22 +14,12 @@ public class Salmentak {
         return salmentak;
     }
 
-    /**
-     * element that is going to be marshaled in the xml
-     */
     @XmlElement( name = "Salmenta" )
     public void setSalmentak( List<Salmenta> salmentak )
     {
         this.salmentak = salmentak;
     }
 
-    /**
-     * This method is not used by jaxb, just used for business reasons. In the case that this class
-     * would be generated using xml schemas definitions, this method has to be added to the
-     * generated class or to some helper or util one
-     * 
-     * @param salmenta
-     */
     public void add( Salmenta salmenta )
     {
         if( this.salmentak == null )

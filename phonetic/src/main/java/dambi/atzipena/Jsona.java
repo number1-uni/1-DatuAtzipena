@@ -26,6 +26,10 @@ public class Jsona {
     this.strFileOut = strFileIn + ".csv";
   }
 
+  /**
+   * Json fitxategia irakurtzen du eta salmentak ArrayList-ean gordeko da. 
+   * @param salmentak
+   */
   public void irakurriSales(Salmentak salmentak) {
     /* READ JSON FILE */
     try {
@@ -54,6 +58,10 @@ public class Jsona {
     }
   }
 
+  /**
+   * produktuak ArrayList-a irakurtzen du eta produktuak json fitxategian idatzen ditu.
+   * @param produktuak
+   */
   public int idatziProducts(Produktuak produktuak) {
     int mendiKopurua = 0;
     JsonArray model = null;
@@ -77,6 +85,10 @@ public class Jsona {
     return mendiKopurua;
   }
 
+  /**
+   * salmentak ArrayList-a irakurtzen du eta salmentak json fitxategian idatzen ditu.
+   * @param salmentak
+   */
   public int idatziSales(Salmentak salmentak) {
     int mendiKopurua = 0;
     JsonArray model = null;
