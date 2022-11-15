@@ -31,7 +31,7 @@ public class Csva {
 
     BufferedReader br = null;
     try {
-      br = new BufferedReader(new FileReader("src//data//" + strFileIn));
+      br = new BufferedReader(new FileReader("data//" + strFileIn));
       String line = br.readLine();
       int iterator = 0;
       while (line != null) {
@@ -75,7 +75,7 @@ public class Csva {
   public int idatziProducts(Produktuak produktuak) {
     int kopurua = 0;
 
-    try (PrintWriter outputStream = new PrintWriter(new FileWriter("src//data//" + strFileOut))) {
+    try (PrintWriter outputStream = new PrintWriter(new FileWriter("data//" + strFileOut))) {
       for (Produktua m : produktuak.getProduktuak()) {
         if (kopurua == 0) {
           outputStream.println("PRODUKTUA;IZENA;PREZIOA");
@@ -97,7 +97,7 @@ public class Csva {
   public int idatziSales(Salmentak salmentak) {
     int kopurua = 0;
 
-    try (PrintWriter outputStream = new PrintWriter(new FileWriter("src//data//" + strFileOut))) {
+    try (PrintWriter outputStream = new PrintWriter(new FileWriter("data//" + strFileOut))) {
       for (Salmenta m : salmentak.getSalmentak()) {
         if (kopurua == 0) {
           outputStream.println("SALMENTA");

@@ -28,7 +28,7 @@ public class XMLa {
    */
   public void irakurriSales(Salmentak salmentak) {
     try {
-      File file = new File("src//data//" + strFileIn);
+      File file = new File("data//" + strFileIn);
       JAXBContext jaxbContext = JAXBContext.newInstance(Salmentak.class);
 
       Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
@@ -50,7 +50,7 @@ public class XMLa {
       JAXBContext jaxbContext = JAXBContext.newInstance(Produktuak.class);
       Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
       jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-      jaxbMarshaller.marshal(produktuak, new File( "src//data//"+strFileOut));
+      jaxbMarshaller.marshal(produktuak, new File( "data//"+strFileOut));
       kopurua = produktuak.getProduktuak().size();
       System.out.println(strFileOut + " fitxategia ondo idatzi da.");
     } catch (Exception ex) {
@@ -69,7 +69,7 @@ public class XMLa {
       JAXBContext jaxbContext = JAXBContext.newInstance(Salmentak.class);
       Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
       jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-      jaxbMarshaller.marshal(salmentak, new File( "src//data//"+strFileOut));
+      jaxbMarshaller.marshal(salmentak, new File( "data//"+strFileOut));
       kopurua = salmentak.getSalmentak().size();
       System.out.println(strFileOut + " fitxategia ondo idatzi da.");
     } catch (Exception ex) {

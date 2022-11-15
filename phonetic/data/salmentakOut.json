@@ -1,0 +1,2132 @@
+[
+    {
+        "id": 70,
+        "product_id": 10,
+        "name": "Samsung Galaxy A13 64GB+4GB RAM",
+        "price_unit": 159.0,
+        "qty_invoiced": 1,
+        "price_subtotal": 159.0,
+        "price_total": 192.38999938964844,
+        "write_date": "2022-11-15 11:44:30.702"
+    },
+    {
+        "id": 71,
+        "product_id": 10,
+        "name": "Huawei Mate 20 Lite",
+        "price_unit": 15.0,
+        "qty_invoiced": 3,
+        "price_subtotal": 45.0,
+        "price_total": 54.45000076293945,
+        "write_date": "2022-11-15 12:58:52.128"
+    },
+    {
+        "id": 37,
+        "product_id": 33,
+        "name": "Xiaomi Mi 9T Pro",
+        "price_unit": 299.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 598.0,
+        "price_total": 723.5800170898438,
+        "write_date": "2021-12-14 08:09:56.727907"
+    },
+    {
+        "id": 2,
+        "product_id": 26,
+        "name": "Apple MX2G2ZM/A accesorio de smartwatch Cable de carga Blanco",
+        "price_unit": 74.05000305175781,
+        "qty_invoiced": 1,
+        "price_subtotal": 74.05000305175781,
+        "price_total": 89.5999984741211,
+        "write_date": "2022-10-25 12:12:08.275725"
+    },
+    {
+        "id": 9,
+        "product_id": 10,
+        "name": "Samsung Galaxy A13 64GB+4GB RAM",
+        "price_unit": 159.0,
+        "qty_invoiced": 1,
+        "price_subtotal": 159.0,
+        "price_total": 189.0,
+        "write_date": "2020-10-30 09:41:43.126115"
+    },
+    {
+        "id": 10,
+        "product_id": 16,
+        "name": "Cargador para Coche",
+        "price_unit": 15.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 30.0,
+        "price_total": 36.29999923706055,
+        "write_date": "2022-11-09 07:22:11.276059"
+    },
+    {
+        "id": 11,
+        "product_id": 10,
+        "name": "Funda Atleti Xiaomi Redmi S2",
+        "price_unit": 32.0,
+        "qty_invoiced": 2,
+        "price_subtotal": 64.0,
+        "price_total": 77.44000244140625,
+        "write_date": "2022-11-11 09:13:19.943"
+    },
+    {
+        "id": 8,
+        "product_id": 36,
+        "name": "Samsung Galaxy A13 64GB+4GB RAM",
+        "price_unit": 159.0,
+        "qty_invoiced": 1,
+        "price_subtotal": 159.0,
+        "price_total": 192.38999938964844,
+        "write_date": "2020-10-28 09:41:43.126115"
+    },
+    {
+        "id": 12,
+        "product_id": 10,
+        "name": "Telefono pepito",
+        "price_unit": 100.0,
+        "qty_invoiced": 5,
+        "price_subtotal": 500.0,
+        "price_total": 605.0,
+        "write_date": "2022-11-11 09:23:27.397"
+    },
+    {
+        "id": 5,
+        "product_id": 38,
+        "name": "Ebox Protector pantalla vidrio Samsung Galaxy A13",
+        "price_unit": 9.989999771118164,
+        "qty_invoiced": 5,
+        "price_subtotal": 49.95000076293945,
+        "price_total": 60.439998626708984,
+        "write_date": "2021-10-28 07:17:47.981528"
+    },
+    {
+        "id": 6,
+        "product_id": 44,
+        "name": "Apple Funda Silicone Case iPhone 11 Pro Max",
+        "price_unit": 44.9900016784668,
+        "qty_invoiced": 1,
+        "price_subtotal": 44.9900016784668,
+        "price_total": 54.439998626708984,
+        "write_date": "2020-10-28 09:41:43.126115"
+    },
+    {
+        "id": 3,
+        "product_id": 27,
+        "name": "Amazfit Bip 3 Pro",
+        "price_unit": 69.98999786376953,
+        "qty_invoiced": 3,
+        "price_subtotal": 209.97000122070312,
+        "price_total": 254.05999755859375,
+        "write_date": "2021-09-26 06:29:35.595509"
+    },
+    {
+        "id": 1,
+        "product_id": 25,
+        "name": "Apple Watch Series 3 42mm",
+        "price_unit": 235.0,
+        "qty_invoiced": 1,
+        "price_subtotal": 235.0,
+        "price_total": 284.3500061035156,
+        "write_date": "2022-07-25 11:49:33.67354"
+    },
+    {
+        "id": 4,
+        "product_id": 25,
+        "name": "Apple Watch Series 3 42mm",
+        "price_unit": 235.0,
+        "qty_invoiced": 2,
+        "price_subtotal": 470.0,
+        "price_total": 568.7000122070312,
+        "write_date": "2022-01-28 06:36:15.379082"
+    },
+    {
+        "id": 7,
+        "product_id": 4,
+        "name": "Apple iPhone 12 256GB",
+        "price_unit": 879.0,
+        "qty_invoiced": 1,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2022-12-28 09:41:43.126115"
+    },
+    {
+        "id": 13,
+        "product_id": 10,
+        "name": "Samsung Galaxy Buds",
+        "price_unit": 100.0,
+        "qty_invoiced": 12,
+        "price_subtotal": 1200.0,
+        "price_total": 1452.0,
+        "write_date": "2022-11-11 09:27:23.332"
+    },
+    {
+        "id": 14,
+        "product_id": 10,
+        "name": "Samsung Galaxy Buds",
+        "price_unit": 100.0,
+        "qty_invoiced": 12,
+        "price_subtotal": 1200.0,
+        "price_total": 1452.0,
+        "write_date": "2022-11-11 09:29:28.267"
+    },
+    {
+        "id": 40,
+        "product_id": 48,
+        "name": "Funda Eibar Xiaomi Redmi 7A",
+        "price_unit": 0.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 0.0,
+        "price_total": 0.0,
+        "write_date": "2022-03-14 08:13:41.168176"
+    },
+    {
+        "id": 46,
+        "product_id": 34,
+        "name": "Xiaomi 11T",
+        "price_unit": 599.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 599.0,
+        "price_total": 724.7899780273438,
+        "write_date": "2022-09-14 08:14:41.521986"
+    },
+    {
+        "id": 63,
+        "product_id": 28,
+        "name": "Amazfit GTS 2 mini",
+        "price_unit": 79.98999786376953,
+        "qty_invoiced": 0,
+        "price_subtotal": 79.98999786376953,
+        "price_total": 96.79000091552734,
+        "write_date": "2021-11-14 08:22:44.504766"
+    },
+    {
+        "id": 24,
+        "product_id": 15,
+        "name": "Funda AC/DC Iphone",
+        "price_unit": 12.949999809265137,
+        "qty_invoiced": 0,
+        "price_subtotal": 25.899999618530273,
+        "price_total": 31.34000015258789,
+        "write_date": "2022-11-14 08:04:49.841396"
+    },
+    {
+        "id": 64,
+        "product_id": 35,
+        "name": "Xiaomi Redmi 10C",
+        "price_unit": 169.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 169.0,
+        "price_total": 204.49000549316406,
+        "write_date": "2021-12-14 08:22:57.116455"
+    },
+    {
+        "id": 15,
+        "product_id": 4,
+        "name": "Apple iPhone 12",
+        "price_unit": 879.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2022-01-14 08:02:48.912039"
+    },
+    {
+        "id": 16,
+        "product_id": 10,
+        "name": "Cargador de carga rápida",
+        "price_unit": 12.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 36.0,
+        "price_total": 43.560001373291016,
+        "write_date": "2022-02-14 08:03:06.411572"
+    },
+    {
+        "id": 17,
+        "product_id": 27,
+        "name": "Amazfit Bip 3 Pro",
+        "price_unit": 69.98999786376953,
+        "qty_invoiced": 0,
+        "price_subtotal": 349.95001220703125,
+        "price_total": 423.44000244140625,
+        "write_date": "2022-03-14 08:03:30.703539"
+    },
+    {
+        "id": 18,
+        "product_id": 17,
+        "name": "Samsung Galaxy Watch5",
+        "price_unit": 329.8999938964844,
+        "qty_invoiced": 0,
+        "price_subtotal": 989.7000122070312,
+        "price_total": 1197.5400390625,
+        "write_date": "2022-04-14 08:03:30.703539"
+    },
+    {
+        "id": 19,
+        "product_id": 5,
+        "name": "Protector Pantalla iPhone 12",
+        "price_unit": 29.989999771118164,
+        "qty_invoiced": 0,
+        "price_subtotal": 29.989999771118164,
+        "price_total": 36.290000915527344,
+        "write_date": "2022-05-14 08:03:57.076533"
+    },
+    {
+        "id": 20,
+        "product_id": 4,
+        "name": "Apple iPhone 12",
+        "price_unit": 879.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2022-06-14 08:03:57.076533"
+    },
+    {
+        "id": 21,
+        "product_id": 44,
+        "name": "Funda iPhone 11 Pro Max",
+        "price_unit": 44.9900016784668,
+        "qty_invoiced": 0,
+        "price_subtotal": 44.9900016784668,
+        "price_total": 54.439998626708984,
+        "write_date": "2022-07-14 08:03:57.076533"
+    },
+    {
+        "id": 22,
+        "product_id": 33,
+        "name": "Xiaomi Mi 9T Pro",
+        "price_unit": 299.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 299.0,
+        "price_total": 361.7900085449219,
+        "write_date": "2022-08-14 08:04:10.369233"
+    },
+    {
+        "id": 23,
+        "product_id": 33,
+        "name": "Xiaomi Mi 9T Pro",
+        "price_unit": 299.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 598.0,
+        "price_total": 723.5800170898438,
+        "write_date": "2022-09-14 08:04:30.333862"
+    },
+    {
+        "id": 25,
+        "product_id": 34,
+        "name": "Xiaomi 11T",
+        "price_unit": 599.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 1797.0,
+        "price_total": 2174.3701171875,
+        "write_date": "2022-12-14 08:05:06.764725"
+    },
+    {
+        "id": 26,
+        "product_id": 10,
+        "name": "Cargador de carga rápida",
+        "price_unit": 12.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 36.0,
+        "price_total": 43.560001373291016,
+        "write_date": "2021-01-14 08:05:27.347175"
+    },
+    {
+        "id": 27,
+        "product_id": 22,
+        "name": "Samsung Gear Fit 2 Pro",
+        "price_unit": 52.810001373291016,
+        "qty_invoiced": 0,
+        "price_subtotal": 52.810001373291016,
+        "price_total": 63.900001525878906,
+        "write_date": "2021-02-14 08:05:52.422129"
+    },
+    {
+        "id": 28,
+        "product_id": 8,
+        "name": "Funda iPhone 11 El Rey León",
+        "price_unit": 12.989999771118164,
+        "qty_invoiced": 0,
+        "price_subtotal": 25.979999542236328,
+        "price_total": 31.440000534057617,
+        "write_date": "2021-03-14 08:05:52.422129"
+    },
+    {
+        "id": 29,
+        "product_id": 4,
+        "name": "Apple iPhone 12",
+        "price_unit": 879.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2021-04-14 08:07:27.622175"
+    },
+    {
+        "id": 30,
+        "product_id": 35,
+        "name": "Xiaomi Redmi 10C",
+        "price_unit": 169.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 169.0,
+        "price_total": 204.49000549316406,
+        "write_date": "2021-05-14 08:07:37.596527"
+    },
+    {
+        "id": 31,
+        "product_id": 49,
+        "name": "Funda Atleti Xiaomi Redmi S2",
+        "price_unit": 0.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 0.0,
+        "price_total": 0.0,
+        "write_date": "2021-06-14 08:07:54.794147"
+    },
+    {
+        "id": 32,
+        "product_id": 47,
+        "name": "Funda  Huawei Mate 20 X Valladolid",
+        "price_unit": 0.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 0.0,
+        "price_total": 0.0,
+        "write_date": "2021-06-14 08:08:10.903565"
+    },
+    {
+        "id": 33,
+        "product_id": 10,
+        "name": "Cargador de carga rápida",
+        "price_unit": 12.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 36.0,
+        "price_total": 43.560001373291016,
+        "write_date": "2021-07-14 08:08:24.631545"
+    },
+    {
+        "id": 34,
+        "product_id": 6,
+        "name": "AirPods Pro (2.ª generación)",
+        "price_unit": 299.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 299.0,
+        "price_total": 361.7900085449219,
+        "write_date": "2021-08-14 08:08:38.782968"
+    },
+    {
+        "id": 35,
+        "product_id": 4,
+        "name": "Apple iPhone 12",
+        "price_unit": 879.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2021-09-14 08:08:38.782968"
+    },
+    {
+        "id": 36,
+        "product_id": 35,
+        "name": "Xiaomi Redmi 10C",
+        "price_unit": 0.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 0.0,
+        "price_total": 0.0,
+        "write_date": "2021-11-14 08:08:48.294284"
+    },
+    {
+        "id": 47,
+        "product_id": 33,
+        "name": "Xiaomi Mi 9T Pro",
+        "price_unit": 299.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 299.0,
+        "price_total": 361.7900085449219,
+        "write_date": "2022-11-14 08:14:56.865412"
+    },
+    {
+        "id": 38,
+        "product_id": 4,
+        "name": "Apple iPhone 12",
+        "price_unit": 879.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2022-01-14 08:13:07.899549"
+    },
+    {
+        "id": 39,
+        "product_id": 35,
+        "name": "Xiaomi Redmi 10C",
+        "price_unit": 169.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 169.0,
+        "price_total": 204.49000549316406,
+        "write_date": "2022-02-14 08:13:21.685067"
+    },
+    {
+        "id": 41,
+        "product_id": 16,
+        "name": "Cargador para Coche",
+        "price_unit": 15.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 45.0,
+        "price_total": 54.45000076293945,
+        "write_date": "2022-04-14 08:13:43.231379"
+    },
+    {
+        "id": 42,
+        "product_id": 35,
+        "name": "Xiaomi Redmi 10C",
+        "price_unit": 169.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 338.0,
+        "price_total": 408.9800109863281,
+        "write_date": "2022-05-14 08:14:01.115148"
+    },
+    {
+        "id": 43,
+        "product_id": 15,
+        "name": "Funda AC/DC Iphone",
+        "price_unit": 12.949999809265137,
+        "qty_invoiced": 0,
+        "price_subtotal": 51.79999923706055,
+        "price_total": 62.68000030517578,
+        "write_date": "2022-06-14 08:14:30.22671"
+    },
+    {
+        "id": 44,
+        "product_id": 13,
+        "name": "Cristal Templado Samsung Galaxy M21",
+        "price_unit": 15.949999809265137,
+        "qty_invoiced": 0,
+        "price_subtotal": 95.69999694824219,
+        "price_total": 115.80000305175781,
+        "write_date": "2022-07-14 08:14:30.22671"
+    },
+    {
+        "id": 52,
+        "product_id": 41,
+        "name": "ZTE LiveBuds",
+        "price_unit": 16.989999771118164,
+        "qty_invoiced": 0,
+        "price_subtotal": 33.97999954223633,
+        "price_total": 41.119998931884766,
+        "write_date": "2020-02-14 08:15:37.175345"
+    },
+    {
+        "id": 55,
+        "product_id": 10,
+        "name": "Cargador de carga rápida",
+        "price_unit": 12.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 36.0,
+        "price_total": 43.560001373291016,
+        "write_date": "2020-09-14 08:16:07.450017"
+    },
+    {
+        "id": 57,
+        "product_id": 4,
+        "name": "Apple iPhone 12",
+        "price_unit": 879.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2020-07-14 08:16:33.068399"
+    },
+    {
+        "id": 61,
+        "product_id": 49,
+        "name": "Funda Atleti Xiaomi Redmi S2",
+        "price_unit": 1.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 1.0,
+        "price_total": 1.2100000381469727,
+        "write_date": "2020-02-14 08:18:00.759615"
+    },
+    {
+        "id": 62,
+        "product_id": 48,
+        "name": "Funda Eibar Xiaomi Redmi 7A",
+        "price_unit": 14.989999771118164,
+        "qty_invoiced": 0,
+        "price_subtotal": 14.989999771118164,
+        "price_total": 18.139999389648438,
+        "write_date": "2020-01-14 08:18:00.759615"
+    },
+    {
+        "id": 45,
+        "product_id": 20,
+        "name": "Xiaomi Mi Watch",
+        "price_unit": 103.68000030517578,
+        "qty_invoiced": 0,
+        "price_subtotal": 1244.1600341796875,
+        "price_total": 1505.4300537109375,
+        "write_date": "2022-08-14 08:14:30.22671"
+    },
+    {
+        "id": 48,
+        "product_id": 10,
+        "name": "Cargador de carga rápida",
+        "price_unit": 12.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 144.0,
+        "price_total": 174.24000549316406,
+        "write_date": "2022-12-14 08:15:37.175345"
+    },
+    {
+        "id": 50,
+        "product_id": 35,
+        "name": "Xiaomi Redmi 10C",
+        "price_unit": 169.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 169.0,
+        "price_total": 204.49000549316406,
+        "write_date": "2020-03-14 08:15:37.175345"
+    },
+    {
+        "id": 53,
+        "product_id": 34,
+        "name": "Xiaomi 11T",
+        "price_unit": 599.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 599.0,
+        "price_total": 724.7899780273438,
+        "write_date": "2021-12-14 08:15:53.789037"
+    },
+    {
+        "id": 54,
+        "product_id": 27,
+        "name": "Amazfit Bip 3 Pro",
+        "price_unit": 69.98999786376953,
+        "qty_invoiced": 0,
+        "price_subtotal": 69.98999786376953,
+        "price_total": 84.69000244140625,
+        "write_date": "2021-08-14 08:16:04.146083"
+    },
+    {
+        "id": 65,
+        "product_id": 16,
+        "name": "Cargador para Coche",
+        "price_unit": 15.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 15.0,
+        "price_total": 18.149999618530273,
+        "write_date": "2020-12-14 08:23:04.705742"
+    },
+    {
+        "id": 66,
+        "product_id": 34,
+        "name": "Xiaomi 11T",
+        "price_unit": 599.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 599.0,
+        "price_total": 724.7899780273438,
+        "write_date": "2020-12-14 08:23:14.08542"
+    },
+    {
+        "id": 49,
+        "product_id": 34,
+        "name": "Xiaomi 11T",
+        "price_unit": 599.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 1797.0,
+        "price_total": 2174.3701171875,
+        "write_date": "2020-01-14 08:15:37.175345"
+    },
+    {
+        "id": 51,
+        "product_id": 28,
+        "name": "Amazfit GTS 2 mini",
+        "price_unit": 79.98999786376953,
+        "qty_invoiced": 0,
+        "price_subtotal": 319.9599914550781,
+        "price_total": 387.1499938964844,
+        "write_date": "2020-11-14 08:15:37.175345"
+    },
+    {
+        "id": 56,
+        "product_id": 25,
+        "name": "Apple Watch Series 3",
+        "price_unit": 235.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 470.0,
+        "price_total": 568.7000122070312,
+        "write_date": "2020-08-14 08:16:33.068399"
+    },
+    {
+        "id": 58,
+        "product_id": 6,
+        "name": "AirPods Pro (2.ª generación)",
+        "price_unit": 299.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 598.0,
+        "price_total": 723.5800170898438,
+        "write_date": "2020-06-14 08:16:57.456021"
+    },
+    {
+        "id": 59,
+        "product_id": 34,
+        "name": "Xiaomi 11T",
+        "price_unit": 599.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 1797.0,
+        "price_total": 2174.3701171875,
+        "write_date": "2020-05-14 08:17:27.707336"
+    },
+    {
+        "id": 60,
+        "product_id": 20,
+        "name": "Xiaomi Mi Watch",
+        "price_unit": 103.68000030517578,
+        "qty_invoiced": 0,
+        "price_subtotal": 103.68000030517578,
+        "price_total": 125.44999694824219,
+        "write_date": "2020-04-14 08:17:27.707336"
+    },
+    {
+        "id": 67,
+        "product_id": 19,
+        "name": "Xiaomi Mi Band 3",
+        "price_unit": 27.18000030517578,
+        "qty_invoiced": 0,
+        "price_subtotal": 27.18000030517578,
+        "price_total": 32.88999938964844,
+        "write_date": "2020-01-14 08:23:27.336431"
+    },
+    {
+        "id": 68,
+        "product_id": 29,
+        "name": "ZTE Blade A52 Lite",
+        "price_unit": 99.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 99.0,
+        "price_total": 119.79000091552734,
+        "write_date": "2020-02-14 08:23:41.706445"
+    },
+    {
+        "id": 69,
+        "product_id": 10,
+        "name": "ZTE LiveBuds",
+        "price_unit": 12.0,
+        "qty_invoiced": 3,
+        "price_subtotal": 36.0,
+        "price_total": 43.560001373291016,
+        "write_date": "2022-11-14 13:13:34.498"
+    },
+    {
+        "id": 70,
+        "product_id": 10,
+        "name": "Samsung Galaxy A13 64GB+4GB RAM",
+        "price_unit": 159.0,
+        "qty_invoiced": 1,
+        "price_subtotal": 159.0,
+        "price_total": 192.38999938964844,
+        "write_date": "2022-11-15 11:44:30.702"
+    },
+    {
+        "id": 71,
+        "product_id": 10,
+        "name": "Huawei Mate 20 Lite",
+        "price_unit": 15.0,
+        "qty_invoiced": 3,
+        "price_subtotal": 45.0,
+        "price_total": 54.45000076293945,
+        "write_date": "2022-11-15 12:58:52.128"
+    },
+    {
+        "id": 37,
+        "product_id": 33,
+        "name": "Xiaomi Mi 9T Pro",
+        "price_unit": 299.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 598.0,
+        "price_total": 723.5800170898438,
+        "write_date": "2021-12-14 08:09:56.727907"
+    },
+    {
+        "id": 2,
+        "product_id": 26,
+        "name": "Apple MX2G2ZM/A accesorio de smartwatch Cable de carga Blanco",
+        "price_unit": 74.05000305175781,
+        "qty_invoiced": 1,
+        "price_subtotal": 74.05000305175781,
+        "price_total": 89.5999984741211,
+        "write_date": "2022-10-25 12:12:08.275725"
+    },
+    {
+        "id": 9,
+        "product_id": 10,
+        "name": "Samsung Galaxy A13 64GB+4GB RAM",
+        "price_unit": 159.0,
+        "qty_invoiced": 1,
+        "price_subtotal": 159.0,
+        "price_total": 189.0,
+        "write_date": "2020-10-30 09:41:43.126115"
+    },
+    {
+        "id": 10,
+        "product_id": 16,
+        "name": "Cargador para Coche",
+        "price_unit": 15.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 30.0,
+        "price_total": 36.29999923706055,
+        "write_date": "2022-11-09 07:22:11.276059"
+    },
+    {
+        "id": 11,
+        "product_id": 10,
+        "name": "Funda Atleti Xiaomi Redmi S2",
+        "price_unit": 32.0,
+        "qty_invoiced": 2,
+        "price_subtotal": 64.0,
+        "price_total": 77.44000244140625,
+        "write_date": "2022-11-11 09:13:19.943"
+    },
+    {
+        "id": 8,
+        "product_id": 36,
+        "name": "Samsung Galaxy A13 64GB+4GB RAM",
+        "price_unit": 159.0,
+        "qty_invoiced": 1,
+        "price_subtotal": 159.0,
+        "price_total": 192.38999938964844,
+        "write_date": "2020-10-28 09:41:43.126115"
+    },
+    {
+        "id": 12,
+        "product_id": 10,
+        "name": "Telefono pepito",
+        "price_unit": 100.0,
+        "qty_invoiced": 5,
+        "price_subtotal": 500.0,
+        "price_total": 605.0,
+        "write_date": "2022-11-11 09:23:27.397"
+    },
+    {
+        "id": 5,
+        "product_id": 38,
+        "name": "Ebox Protector pantalla vidrio Samsung Galaxy A13",
+        "price_unit": 9.989999771118164,
+        "qty_invoiced": 5,
+        "price_subtotal": 49.95000076293945,
+        "price_total": 60.439998626708984,
+        "write_date": "2021-10-28 07:17:47.981528"
+    },
+    {
+        "id": 6,
+        "product_id": 44,
+        "name": "Apple Funda Silicone Case iPhone 11 Pro Max",
+        "price_unit": 44.9900016784668,
+        "qty_invoiced": 1,
+        "price_subtotal": 44.9900016784668,
+        "price_total": 54.439998626708984,
+        "write_date": "2020-10-28 09:41:43.126115"
+    },
+    {
+        "id": 3,
+        "product_id": 27,
+        "name": "Amazfit Bip 3 Pro",
+        "price_unit": 69.98999786376953,
+        "qty_invoiced": 3,
+        "price_subtotal": 209.97000122070312,
+        "price_total": 254.05999755859375,
+        "write_date": "2021-09-26 06:29:35.595509"
+    },
+    {
+        "id": 1,
+        "product_id": 25,
+        "name": "Apple Watch Series 3 42mm",
+        "price_unit": 235.0,
+        "qty_invoiced": 1,
+        "price_subtotal": 235.0,
+        "price_total": 284.3500061035156,
+        "write_date": "2022-07-25 11:49:33.67354"
+    },
+    {
+        "id": 4,
+        "product_id": 25,
+        "name": "Apple Watch Series 3 42mm",
+        "price_unit": 235.0,
+        "qty_invoiced": 2,
+        "price_subtotal": 470.0,
+        "price_total": 568.7000122070312,
+        "write_date": "2022-01-28 06:36:15.379082"
+    },
+    {
+        "id": 7,
+        "product_id": 4,
+        "name": "Apple iPhone 12 256GB",
+        "price_unit": 879.0,
+        "qty_invoiced": 1,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2022-12-28 09:41:43.126115"
+    },
+    {
+        "id": 13,
+        "product_id": 10,
+        "name": "Samsung Galaxy Buds",
+        "price_unit": 100.0,
+        "qty_invoiced": 12,
+        "price_subtotal": 1200.0,
+        "price_total": 1452.0,
+        "write_date": "2022-11-11 09:27:23.332"
+    },
+    {
+        "id": 14,
+        "product_id": 10,
+        "name": "Samsung Galaxy Buds",
+        "price_unit": 100.0,
+        "qty_invoiced": 12,
+        "price_subtotal": 1200.0,
+        "price_total": 1452.0,
+        "write_date": "2022-11-11 09:29:28.267"
+    },
+    {
+        "id": 40,
+        "product_id": 48,
+        "name": "Funda Eibar Xiaomi Redmi 7A",
+        "price_unit": 0.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 0.0,
+        "price_total": 0.0,
+        "write_date": "2022-03-14 08:13:41.168176"
+    },
+    {
+        "id": 46,
+        "product_id": 34,
+        "name": "Xiaomi 11T",
+        "price_unit": 599.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 599.0,
+        "price_total": 724.7899780273438,
+        "write_date": "2022-09-14 08:14:41.521986"
+    },
+    {
+        "id": 63,
+        "product_id": 28,
+        "name": "Amazfit GTS 2 mini",
+        "price_unit": 79.98999786376953,
+        "qty_invoiced": 0,
+        "price_subtotal": 79.98999786376953,
+        "price_total": 96.79000091552734,
+        "write_date": "2021-11-14 08:22:44.504766"
+    },
+    {
+        "id": 24,
+        "product_id": 15,
+        "name": "Funda AC/DC Iphone",
+        "price_unit": 12.949999809265137,
+        "qty_invoiced": 0,
+        "price_subtotal": 25.899999618530273,
+        "price_total": 31.34000015258789,
+        "write_date": "2022-11-14 08:04:49.841396"
+    },
+    {
+        "id": 64,
+        "product_id": 35,
+        "name": "Xiaomi Redmi 10C",
+        "price_unit": 169.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 169.0,
+        "price_total": 204.49000549316406,
+        "write_date": "2021-12-14 08:22:57.116455"
+    },
+    {
+        "id": 15,
+        "product_id": 4,
+        "name": "Apple iPhone 12",
+        "price_unit": 879.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2022-01-14 08:02:48.912039"
+    },
+    {
+        "id": 16,
+        "product_id": 10,
+        "name": "Cargador de carga rápida",
+        "price_unit": 12.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 36.0,
+        "price_total": 43.560001373291016,
+        "write_date": "2022-02-14 08:03:06.411572"
+    },
+    {
+        "id": 17,
+        "product_id": 27,
+        "name": "Amazfit Bip 3 Pro",
+        "price_unit": 69.98999786376953,
+        "qty_invoiced": 0,
+        "price_subtotal": 349.95001220703125,
+        "price_total": 423.44000244140625,
+        "write_date": "2022-03-14 08:03:30.703539"
+    },
+    {
+        "id": 18,
+        "product_id": 17,
+        "name": "Samsung Galaxy Watch5",
+        "price_unit": 329.8999938964844,
+        "qty_invoiced": 0,
+        "price_subtotal": 989.7000122070312,
+        "price_total": 1197.5400390625,
+        "write_date": "2022-04-14 08:03:30.703539"
+    },
+    {
+        "id": 19,
+        "product_id": 5,
+        "name": "Protector Pantalla iPhone 12",
+        "price_unit": 29.989999771118164,
+        "qty_invoiced": 0,
+        "price_subtotal": 29.989999771118164,
+        "price_total": 36.290000915527344,
+        "write_date": "2022-05-14 08:03:57.076533"
+    },
+    {
+        "id": 20,
+        "product_id": 4,
+        "name": "Apple iPhone 12",
+        "price_unit": 879.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2022-06-14 08:03:57.076533"
+    },
+    {
+        "id": 21,
+        "product_id": 44,
+        "name": "Funda iPhone 11 Pro Max",
+        "price_unit": 44.9900016784668,
+        "qty_invoiced": 0,
+        "price_subtotal": 44.9900016784668,
+        "price_total": 54.439998626708984,
+        "write_date": "2022-07-14 08:03:57.076533"
+    },
+    {
+        "id": 22,
+        "product_id": 33,
+        "name": "Xiaomi Mi 9T Pro",
+        "price_unit": 299.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 299.0,
+        "price_total": 361.7900085449219,
+        "write_date": "2022-08-14 08:04:10.369233"
+    },
+    {
+        "id": 23,
+        "product_id": 33,
+        "name": "Xiaomi Mi 9T Pro",
+        "price_unit": 299.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 598.0,
+        "price_total": 723.5800170898438,
+        "write_date": "2022-09-14 08:04:30.333862"
+    },
+    {
+        "id": 25,
+        "product_id": 34,
+        "name": "Xiaomi 11T",
+        "price_unit": 599.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 1797.0,
+        "price_total": 2174.3701171875,
+        "write_date": "2022-12-14 08:05:06.764725"
+    },
+    {
+        "id": 26,
+        "product_id": 10,
+        "name": "Cargador de carga rápida",
+        "price_unit": 12.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 36.0,
+        "price_total": 43.560001373291016,
+        "write_date": "2021-01-14 08:05:27.347175"
+    },
+    {
+        "id": 27,
+        "product_id": 22,
+        "name": "Samsung Gear Fit 2 Pro",
+        "price_unit": 52.810001373291016,
+        "qty_invoiced": 0,
+        "price_subtotal": 52.810001373291016,
+        "price_total": 63.900001525878906,
+        "write_date": "2021-02-14 08:05:52.422129"
+    },
+    {
+        "id": 28,
+        "product_id": 8,
+        "name": "Funda iPhone 11 El Rey León",
+        "price_unit": 12.989999771118164,
+        "qty_invoiced": 0,
+        "price_subtotal": 25.979999542236328,
+        "price_total": 31.440000534057617,
+        "write_date": "2021-03-14 08:05:52.422129"
+    },
+    {
+        "id": 29,
+        "product_id": 4,
+        "name": "Apple iPhone 12",
+        "price_unit": 879.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2021-04-14 08:07:27.622175"
+    },
+    {
+        "id": 30,
+        "product_id": 35,
+        "name": "Xiaomi Redmi 10C",
+        "price_unit": 169.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 169.0,
+        "price_total": 204.49000549316406,
+        "write_date": "2021-05-14 08:07:37.596527"
+    },
+    {
+        "id": 31,
+        "product_id": 49,
+        "name": "Funda Atleti Xiaomi Redmi S2",
+        "price_unit": 0.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 0.0,
+        "price_total": 0.0,
+        "write_date": "2021-06-14 08:07:54.794147"
+    },
+    {
+        "id": 32,
+        "product_id": 47,
+        "name": "Funda  Huawei Mate 20 X Valladolid",
+        "price_unit": 0.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 0.0,
+        "price_total": 0.0,
+        "write_date": "2021-06-14 08:08:10.903565"
+    },
+    {
+        "id": 33,
+        "product_id": 10,
+        "name": "Cargador de carga rápida",
+        "price_unit": 12.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 36.0,
+        "price_total": 43.560001373291016,
+        "write_date": "2021-07-14 08:08:24.631545"
+    },
+    {
+        "id": 34,
+        "product_id": 6,
+        "name": "AirPods Pro (2.ª generación)",
+        "price_unit": 299.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 299.0,
+        "price_total": 361.7900085449219,
+        "write_date": "2021-08-14 08:08:38.782968"
+    },
+    {
+        "id": 35,
+        "product_id": 4,
+        "name": "Apple iPhone 12",
+        "price_unit": 879.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2021-09-14 08:08:38.782968"
+    },
+    {
+        "id": 36,
+        "product_id": 35,
+        "name": "Xiaomi Redmi 10C",
+        "price_unit": 0.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 0.0,
+        "price_total": 0.0,
+        "write_date": "2021-11-14 08:08:48.294284"
+    },
+    {
+        "id": 47,
+        "product_id": 33,
+        "name": "Xiaomi Mi 9T Pro",
+        "price_unit": 299.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 299.0,
+        "price_total": 361.7900085449219,
+        "write_date": "2022-11-14 08:14:56.865412"
+    },
+    {
+        "id": 38,
+        "product_id": 4,
+        "name": "Apple iPhone 12",
+        "price_unit": 879.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2022-01-14 08:13:07.899549"
+    },
+    {
+        "id": 39,
+        "product_id": 35,
+        "name": "Xiaomi Redmi 10C",
+        "price_unit": 169.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 169.0,
+        "price_total": 204.49000549316406,
+        "write_date": "2022-02-14 08:13:21.685067"
+    },
+    {
+        "id": 41,
+        "product_id": 16,
+        "name": "Cargador para Coche",
+        "price_unit": 15.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 45.0,
+        "price_total": 54.45000076293945,
+        "write_date": "2022-04-14 08:13:43.231379"
+    },
+    {
+        "id": 42,
+        "product_id": 35,
+        "name": "Xiaomi Redmi 10C",
+        "price_unit": 169.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 338.0,
+        "price_total": 408.9800109863281,
+        "write_date": "2022-05-14 08:14:01.115148"
+    },
+    {
+        "id": 43,
+        "product_id": 15,
+        "name": "Funda AC/DC Iphone",
+        "price_unit": 12.949999809265137,
+        "qty_invoiced": 0,
+        "price_subtotal": 51.79999923706055,
+        "price_total": 62.68000030517578,
+        "write_date": "2022-06-14 08:14:30.22671"
+    },
+    {
+        "id": 44,
+        "product_id": 13,
+        "name": "Cristal Templado Samsung Galaxy M21",
+        "price_unit": 15.949999809265137,
+        "qty_invoiced": 0,
+        "price_subtotal": 95.69999694824219,
+        "price_total": 115.80000305175781,
+        "write_date": "2022-07-14 08:14:30.22671"
+    },
+    {
+        "id": 52,
+        "product_id": 41,
+        "name": "ZTE LiveBuds",
+        "price_unit": 16.989999771118164,
+        "qty_invoiced": 0,
+        "price_subtotal": 33.97999954223633,
+        "price_total": 41.119998931884766,
+        "write_date": "2020-02-14 08:15:37.175345"
+    },
+    {
+        "id": 55,
+        "product_id": 10,
+        "name": "Cargador de carga rápida",
+        "price_unit": 12.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 36.0,
+        "price_total": 43.560001373291016,
+        "write_date": "2020-09-14 08:16:07.450017"
+    },
+    {
+        "id": 57,
+        "product_id": 4,
+        "name": "Apple iPhone 12",
+        "price_unit": 879.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2020-07-14 08:16:33.068399"
+    },
+    {
+        "id": 61,
+        "product_id": 49,
+        "name": "Funda Atleti Xiaomi Redmi S2",
+        "price_unit": 1.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 1.0,
+        "price_total": 1.2100000381469727,
+        "write_date": "2020-02-14 08:18:00.759615"
+    },
+    {
+        "id": 62,
+        "product_id": 48,
+        "name": "Funda Eibar Xiaomi Redmi 7A",
+        "price_unit": 14.989999771118164,
+        "qty_invoiced": 0,
+        "price_subtotal": 14.989999771118164,
+        "price_total": 18.139999389648438,
+        "write_date": "2020-01-14 08:18:00.759615"
+    },
+    {
+        "id": 45,
+        "product_id": 20,
+        "name": "Xiaomi Mi Watch",
+        "price_unit": 103.68000030517578,
+        "qty_invoiced": 0,
+        "price_subtotal": 1244.1600341796875,
+        "price_total": 1505.4300537109375,
+        "write_date": "2022-08-14 08:14:30.22671"
+    },
+    {
+        "id": 48,
+        "product_id": 10,
+        "name": "Cargador de carga rápida",
+        "price_unit": 12.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 144.0,
+        "price_total": 174.24000549316406,
+        "write_date": "2022-12-14 08:15:37.175345"
+    },
+    {
+        "id": 50,
+        "product_id": 35,
+        "name": "Xiaomi Redmi 10C",
+        "price_unit": 169.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 169.0,
+        "price_total": 204.49000549316406,
+        "write_date": "2020-03-14 08:15:37.175345"
+    },
+    {
+        "id": 53,
+        "product_id": 34,
+        "name": "Xiaomi 11T",
+        "price_unit": 599.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 599.0,
+        "price_total": 724.7899780273438,
+        "write_date": "2021-12-14 08:15:53.789037"
+    },
+    {
+        "id": 54,
+        "product_id": 27,
+        "name": "Amazfit Bip 3 Pro",
+        "price_unit": 69.98999786376953,
+        "qty_invoiced": 0,
+        "price_subtotal": 69.98999786376953,
+        "price_total": 84.69000244140625,
+        "write_date": "2021-08-14 08:16:04.146083"
+    },
+    {
+        "id": 65,
+        "product_id": 16,
+        "name": "Cargador para Coche",
+        "price_unit": 15.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 15.0,
+        "price_total": 18.149999618530273,
+        "write_date": "2020-12-14 08:23:04.705742"
+    },
+    {
+        "id": 66,
+        "product_id": 34,
+        "name": "Xiaomi 11T",
+        "price_unit": 599.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 599.0,
+        "price_total": 724.7899780273438,
+        "write_date": "2020-12-14 08:23:14.08542"
+    },
+    {
+        "id": 49,
+        "product_id": 34,
+        "name": "Xiaomi 11T",
+        "price_unit": 599.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 1797.0,
+        "price_total": 2174.3701171875,
+        "write_date": "2020-01-14 08:15:37.175345"
+    },
+    {
+        "id": 51,
+        "product_id": 28,
+        "name": "Amazfit GTS 2 mini",
+        "price_unit": 79.98999786376953,
+        "qty_invoiced": 0,
+        "price_subtotal": 319.9599914550781,
+        "price_total": 387.1499938964844,
+        "write_date": "2020-11-14 08:15:37.175345"
+    },
+    {
+        "id": 56,
+        "product_id": 25,
+        "name": "Apple Watch Series 3",
+        "price_unit": 235.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 470.0,
+        "price_total": 568.7000122070312,
+        "write_date": "2020-08-14 08:16:33.068399"
+    },
+    {
+        "id": 58,
+        "product_id": 6,
+        "name": "AirPods Pro (2.ª generación)",
+        "price_unit": 299.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 598.0,
+        "price_total": 723.5800170898438,
+        "write_date": "2020-06-14 08:16:57.456021"
+    },
+    {
+        "id": 59,
+        "product_id": 34,
+        "name": "Xiaomi 11T",
+        "price_unit": 599.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 1797.0,
+        "price_total": 2174.3701171875,
+        "write_date": "2020-05-14 08:17:27.707336"
+    },
+    {
+        "id": 60,
+        "product_id": 20,
+        "name": "Xiaomi Mi Watch",
+        "price_unit": 103.68000030517578,
+        "qty_invoiced": 0,
+        "price_subtotal": 103.68000030517578,
+        "price_total": 125.44999694824219,
+        "write_date": "2020-04-14 08:17:27.707336"
+    },
+    {
+        "id": 67,
+        "product_id": 19,
+        "name": "Xiaomi Mi Band 3",
+        "price_unit": 27.18000030517578,
+        "qty_invoiced": 0,
+        "price_subtotal": 27.18000030517578,
+        "price_total": 32.88999938964844,
+        "write_date": "2020-01-14 08:23:27.336431"
+    },
+    {
+        "id": 68,
+        "product_id": 29,
+        "name": "ZTE Blade A52 Lite",
+        "price_unit": 99.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 99.0,
+        "price_total": 119.79000091552734,
+        "write_date": "2020-02-14 08:23:41.706445"
+    },
+    {
+        "id": 69,
+        "product_id": 10,
+        "name": "ZTE LiveBuds",
+        "price_unit": 12.0,
+        "qty_invoiced": 3,
+        "price_subtotal": 36.0,
+        "price_total": 43.560001373291016,
+        "write_date": "2022-11-14 13:13:34.498"
+    },
+    {
+        "id": 70,
+        "product_id": 10,
+        "name": "Samsung Galaxy A13 64GB+4GB RAM",
+        "price_unit": 159.0,
+        "qty_invoiced": 1,
+        "price_subtotal": 159.0,
+        "price_total": 192.38999938964844,
+        "write_date": "2022-11-15 11:44:30.702"
+    },
+    {
+        "id": 71,
+        "product_id": 10,
+        "name": "Huawei Mate 20 Lite",
+        "price_unit": 15.0,
+        "qty_invoiced": 3,
+        "price_subtotal": 45.0,
+        "price_total": 54.45000076293945,
+        "write_date": "2022-11-15 12:58:52.128"
+    },
+    {
+        "id": 37,
+        "product_id": 33,
+        "name": "Xiaomi Mi 9T Pro",
+        "price_unit": 299.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 598.0,
+        "price_total": 723.5800170898438,
+        "write_date": "2021-12-14 08:09:56.727907"
+    },
+    {
+        "id": 2,
+        "product_id": 26,
+        "name": "Apple MX2G2ZM/A accesorio de smartwatch Cable de carga Blanco",
+        "price_unit": 74.05000305175781,
+        "qty_invoiced": 1,
+        "price_subtotal": 74.05000305175781,
+        "price_total": 89.5999984741211,
+        "write_date": "2022-10-25 12:12:08.275725"
+    },
+    {
+        "id": 9,
+        "product_id": 10,
+        "name": "Samsung Galaxy A13 64GB+4GB RAM",
+        "price_unit": 159.0,
+        "qty_invoiced": 1,
+        "price_subtotal": 159.0,
+        "price_total": 189.0,
+        "write_date": "2020-10-30 09:41:43.126115"
+    },
+    {
+        "id": 10,
+        "product_id": 16,
+        "name": "Cargador para Coche",
+        "price_unit": 15.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 30.0,
+        "price_total": 36.29999923706055,
+        "write_date": "2022-11-09 07:22:11.276059"
+    },
+    {
+        "id": 11,
+        "product_id": 10,
+        "name": "Funda Atleti Xiaomi Redmi S2",
+        "price_unit": 32.0,
+        "qty_invoiced": 2,
+        "price_subtotal": 64.0,
+        "price_total": 77.44000244140625,
+        "write_date": "2022-11-11 09:13:19.943"
+    },
+    {
+        "id": 8,
+        "product_id": 36,
+        "name": "Samsung Galaxy A13 64GB+4GB RAM",
+        "price_unit": 159.0,
+        "qty_invoiced": 1,
+        "price_subtotal": 159.0,
+        "price_total": 192.38999938964844,
+        "write_date": "2020-10-28 09:41:43.126115"
+    },
+    {
+        "id": 12,
+        "product_id": 10,
+        "name": "Telefono pepito",
+        "price_unit": 100.0,
+        "qty_invoiced": 5,
+        "price_subtotal": 500.0,
+        "price_total": 605.0,
+        "write_date": "2022-11-11 09:23:27.397"
+    },
+    {
+        "id": 5,
+        "product_id": 38,
+        "name": "Ebox Protector pantalla vidrio Samsung Galaxy A13",
+        "price_unit": 9.989999771118164,
+        "qty_invoiced": 5,
+        "price_subtotal": 49.95000076293945,
+        "price_total": 60.439998626708984,
+        "write_date": "2021-10-28 07:17:47.981528"
+    },
+    {
+        "id": 6,
+        "product_id": 44,
+        "name": "Apple Funda Silicone Case iPhone 11 Pro Max",
+        "price_unit": 44.9900016784668,
+        "qty_invoiced": 1,
+        "price_subtotal": 44.9900016784668,
+        "price_total": 54.439998626708984,
+        "write_date": "2020-10-28 09:41:43.126115"
+    },
+    {
+        "id": 3,
+        "product_id": 27,
+        "name": "Amazfit Bip 3 Pro",
+        "price_unit": 69.98999786376953,
+        "qty_invoiced": 3,
+        "price_subtotal": 209.97000122070312,
+        "price_total": 254.05999755859375,
+        "write_date": "2021-09-26 06:29:35.595509"
+    },
+    {
+        "id": 1,
+        "product_id": 25,
+        "name": "Apple Watch Series 3 42mm",
+        "price_unit": 235.0,
+        "qty_invoiced": 1,
+        "price_subtotal": 235.0,
+        "price_total": 284.3500061035156,
+        "write_date": "2022-07-25 11:49:33.67354"
+    },
+    {
+        "id": 4,
+        "product_id": 25,
+        "name": "Apple Watch Series 3 42mm",
+        "price_unit": 235.0,
+        "qty_invoiced": 2,
+        "price_subtotal": 470.0,
+        "price_total": 568.7000122070312,
+        "write_date": "2022-01-28 06:36:15.379082"
+    },
+    {
+        "id": 7,
+        "product_id": 4,
+        "name": "Apple iPhone 12 256GB",
+        "price_unit": 879.0,
+        "qty_invoiced": 1,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2022-12-28 09:41:43.126115"
+    },
+    {
+        "id": 13,
+        "product_id": 10,
+        "name": "Samsung Galaxy Buds",
+        "price_unit": 100.0,
+        "qty_invoiced": 12,
+        "price_subtotal": 1200.0,
+        "price_total": 1452.0,
+        "write_date": "2022-11-11 09:27:23.332"
+    },
+    {
+        "id": 14,
+        "product_id": 10,
+        "name": "Samsung Galaxy Buds",
+        "price_unit": 100.0,
+        "qty_invoiced": 12,
+        "price_subtotal": 1200.0,
+        "price_total": 1452.0,
+        "write_date": "2022-11-11 09:29:28.267"
+    },
+    {
+        "id": 40,
+        "product_id": 48,
+        "name": "Funda Eibar Xiaomi Redmi 7A",
+        "price_unit": 0.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 0.0,
+        "price_total": 0.0,
+        "write_date": "2022-03-14 08:13:41.168176"
+    },
+    {
+        "id": 46,
+        "product_id": 34,
+        "name": "Xiaomi 11T",
+        "price_unit": 599.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 599.0,
+        "price_total": 724.7899780273438,
+        "write_date": "2022-09-14 08:14:41.521986"
+    },
+    {
+        "id": 63,
+        "product_id": 28,
+        "name": "Amazfit GTS 2 mini",
+        "price_unit": 79.98999786376953,
+        "qty_invoiced": 0,
+        "price_subtotal": 79.98999786376953,
+        "price_total": 96.79000091552734,
+        "write_date": "2021-11-14 08:22:44.504766"
+    },
+    {
+        "id": 24,
+        "product_id": 15,
+        "name": "Funda AC/DC Iphone",
+        "price_unit": 12.949999809265137,
+        "qty_invoiced": 0,
+        "price_subtotal": 25.899999618530273,
+        "price_total": 31.34000015258789,
+        "write_date": "2022-11-14 08:04:49.841396"
+    },
+    {
+        "id": 64,
+        "product_id": 35,
+        "name": "Xiaomi Redmi 10C",
+        "price_unit": 169.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 169.0,
+        "price_total": 204.49000549316406,
+        "write_date": "2021-12-14 08:22:57.116455"
+    },
+    {
+        "id": 15,
+        "product_id": 4,
+        "name": "Apple iPhone 12",
+        "price_unit": 879.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2022-01-14 08:02:48.912039"
+    },
+    {
+        "id": 16,
+        "product_id": 10,
+        "name": "Cargador de carga rápida",
+        "price_unit": 12.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 36.0,
+        "price_total": 43.560001373291016,
+        "write_date": "2022-02-14 08:03:06.411572"
+    },
+    {
+        "id": 17,
+        "product_id": 27,
+        "name": "Amazfit Bip 3 Pro",
+        "price_unit": 69.98999786376953,
+        "qty_invoiced": 0,
+        "price_subtotal": 349.95001220703125,
+        "price_total": 423.44000244140625,
+        "write_date": "2022-03-14 08:03:30.703539"
+    },
+    {
+        "id": 18,
+        "product_id": 17,
+        "name": "Samsung Galaxy Watch5",
+        "price_unit": 329.8999938964844,
+        "qty_invoiced": 0,
+        "price_subtotal": 989.7000122070312,
+        "price_total": 1197.5400390625,
+        "write_date": "2022-04-14 08:03:30.703539"
+    },
+    {
+        "id": 19,
+        "product_id": 5,
+        "name": "Protector Pantalla iPhone 12",
+        "price_unit": 29.989999771118164,
+        "qty_invoiced": 0,
+        "price_subtotal": 29.989999771118164,
+        "price_total": 36.290000915527344,
+        "write_date": "2022-05-14 08:03:57.076533"
+    },
+    {
+        "id": 20,
+        "product_id": 4,
+        "name": "Apple iPhone 12",
+        "price_unit": 879.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2022-06-14 08:03:57.076533"
+    },
+    {
+        "id": 21,
+        "product_id": 44,
+        "name": "Funda iPhone 11 Pro Max",
+        "price_unit": 44.9900016784668,
+        "qty_invoiced": 0,
+        "price_subtotal": 44.9900016784668,
+        "price_total": 54.439998626708984,
+        "write_date": "2022-07-14 08:03:57.076533"
+    },
+    {
+        "id": 22,
+        "product_id": 33,
+        "name": "Xiaomi Mi 9T Pro",
+        "price_unit": 299.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 299.0,
+        "price_total": 361.7900085449219,
+        "write_date": "2022-08-14 08:04:10.369233"
+    },
+    {
+        "id": 23,
+        "product_id": 33,
+        "name": "Xiaomi Mi 9T Pro",
+        "price_unit": 299.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 598.0,
+        "price_total": 723.5800170898438,
+        "write_date": "2022-09-14 08:04:30.333862"
+    },
+    {
+        "id": 25,
+        "product_id": 34,
+        "name": "Xiaomi 11T",
+        "price_unit": 599.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 1797.0,
+        "price_total": 2174.3701171875,
+        "write_date": "2022-12-14 08:05:06.764725"
+    },
+    {
+        "id": 26,
+        "product_id": 10,
+        "name": "Cargador de carga rápida",
+        "price_unit": 12.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 36.0,
+        "price_total": 43.560001373291016,
+        "write_date": "2021-01-14 08:05:27.347175"
+    },
+    {
+        "id": 27,
+        "product_id": 22,
+        "name": "Samsung Gear Fit 2 Pro",
+        "price_unit": 52.810001373291016,
+        "qty_invoiced": 0,
+        "price_subtotal": 52.810001373291016,
+        "price_total": 63.900001525878906,
+        "write_date": "2021-02-14 08:05:52.422129"
+    },
+    {
+        "id": 28,
+        "product_id": 8,
+        "name": "Funda iPhone 11 El Rey León",
+        "price_unit": 12.989999771118164,
+        "qty_invoiced": 0,
+        "price_subtotal": 25.979999542236328,
+        "price_total": 31.440000534057617,
+        "write_date": "2021-03-14 08:05:52.422129"
+    },
+    {
+        "id": 29,
+        "product_id": 4,
+        "name": "Apple iPhone 12",
+        "price_unit": 879.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2021-04-14 08:07:27.622175"
+    },
+    {
+        "id": 30,
+        "product_id": 35,
+        "name": "Xiaomi Redmi 10C",
+        "price_unit": 169.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 169.0,
+        "price_total": 204.49000549316406,
+        "write_date": "2021-05-14 08:07:37.596527"
+    },
+    {
+        "id": 31,
+        "product_id": 49,
+        "name": "Funda Atleti Xiaomi Redmi S2",
+        "price_unit": 0.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 0.0,
+        "price_total": 0.0,
+        "write_date": "2021-06-14 08:07:54.794147"
+    },
+    {
+        "id": 32,
+        "product_id": 47,
+        "name": "Funda  Huawei Mate 20 X Valladolid",
+        "price_unit": 0.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 0.0,
+        "price_total": 0.0,
+        "write_date": "2021-06-14 08:08:10.903565"
+    },
+    {
+        "id": 33,
+        "product_id": 10,
+        "name": "Cargador de carga rápida",
+        "price_unit": 12.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 36.0,
+        "price_total": 43.560001373291016,
+        "write_date": "2021-07-14 08:08:24.631545"
+    },
+    {
+        "id": 34,
+        "product_id": 6,
+        "name": "AirPods Pro (2.ª generación)",
+        "price_unit": 299.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 299.0,
+        "price_total": 361.7900085449219,
+        "write_date": "2021-08-14 08:08:38.782968"
+    },
+    {
+        "id": 35,
+        "product_id": 4,
+        "name": "Apple iPhone 12",
+        "price_unit": 879.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2021-09-14 08:08:38.782968"
+    },
+    {
+        "id": 36,
+        "product_id": 35,
+        "name": "Xiaomi Redmi 10C",
+        "price_unit": 0.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 0.0,
+        "price_total": 0.0,
+        "write_date": "2021-11-14 08:08:48.294284"
+    },
+    {
+        "id": 47,
+        "product_id": 33,
+        "name": "Xiaomi Mi 9T Pro",
+        "price_unit": 299.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 299.0,
+        "price_total": 361.7900085449219,
+        "write_date": "2022-11-14 08:14:56.865412"
+    },
+    {
+        "id": 38,
+        "product_id": 4,
+        "name": "Apple iPhone 12",
+        "price_unit": 879.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2022-01-14 08:13:07.899549"
+    },
+    {
+        "id": 39,
+        "product_id": 35,
+        "name": "Xiaomi Redmi 10C",
+        "price_unit": 169.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 169.0,
+        "price_total": 204.49000549316406,
+        "write_date": "2022-02-14 08:13:21.685067"
+    },
+    {
+        "id": 41,
+        "product_id": 16,
+        "name": "Cargador para Coche",
+        "price_unit": 15.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 45.0,
+        "price_total": 54.45000076293945,
+        "write_date": "2022-04-14 08:13:43.231379"
+    },
+    {
+        "id": 42,
+        "product_id": 35,
+        "name": "Xiaomi Redmi 10C",
+        "price_unit": 169.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 338.0,
+        "price_total": 408.9800109863281,
+        "write_date": "2022-05-14 08:14:01.115148"
+    },
+    {
+        "id": 43,
+        "product_id": 15,
+        "name": "Funda AC/DC Iphone",
+        "price_unit": 12.949999809265137,
+        "qty_invoiced": 0,
+        "price_subtotal": 51.79999923706055,
+        "price_total": 62.68000030517578,
+        "write_date": "2022-06-14 08:14:30.22671"
+    },
+    {
+        "id": 44,
+        "product_id": 13,
+        "name": "Cristal Templado Samsung Galaxy M21",
+        "price_unit": 15.949999809265137,
+        "qty_invoiced": 0,
+        "price_subtotal": 95.69999694824219,
+        "price_total": 115.80000305175781,
+        "write_date": "2022-07-14 08:14:30.22671"
+    },
+    {
+        "id": 52,
+        "product_id": 41,
+        "name": "ZTE LiveBuds",
+        "price_unit": 16.989999771118164,
+        "qty_invoiced": 0,
+        "price_subtotal": 33.97999954223633,
+        "price_total": 41.119998931884766,
+        "write_date": "2020-02-14 08:15:37.175345"
+    },
+    {
+        "id": 55,
+        "product_id": 10,
+        "name": "Cargador de carga rápida",
+        "price_unit": 12.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 36.0,
+        "price_total": 43.560001373291016,
+        "write_date": "2020-09-14 08:16:07.450017"
+    },
+    {
+        "id": 57,
+        "product_id": 4,
+        "name": "Apple iPhone 12",
+        "price_unit": 879.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 879.0,
+        "price_total": 1063.5899658203125,
+        "write_date": "2020-07-14 08:16:33.068399"
+    },
+    {
+        "id": 61,
+        "product_id": 49,
+        "name": "Funda Atleti Xiaomi Redmi S2",
+        "price_unit": 1.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 1.0,
+        "price_total": 1.2100000381469727,
+        "write_date": "2020-02-14 08:18:00.759615"
+    },
+    {
+        "id": 62,
+        "product_id": 48,
+        "name": "Funda Eibar Xiaomi Redmi 7A",
+        "price_unit": 14.989999771118164,
+        "qty_invoiced": 0,
+        "price_subtotal": 14.989999771118164,
+        "price_total": 18.139999389648438,
+        "write_date": "2020-01-14 08:18:00.759615"
+    },
+    {
+        "id": 45,
+        "product_id": 20,
+        "name": "Xiaomi Mi Watch",
+        "price_unit": 103.68000030517578,
+        "qty_invoiced": 0,
+        "price_subtotal": 1244.1600341796875,
+        "price_total": 1505.4300537109375,
+        "write_date": "2022-08-14 08:14:30.22671"
+    },
+    {
+        "id": 48,
+        "product_id": 10,
+        "name": "Cargador de carga rápida",
+        "price_unit": 12.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 144.0,
+        "price_total": 174.24000549316406,
+        "write_date": "2022-12-14 08:15:37.175345"
+    },
+    {
+        "id": 50,
+        "product_id": 35,
+        "name": "Xiaomi Redmi 10C",
+        "price_unit": 169.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 169.0,
+        "price_total": 204.49000549316406,
+        "write_date": "2020-03-14 08:15:37.175345"
+    },
+    {
+        "id": 53,
+        "product_id": 34,
+        "name": "Xiaomi 11T",
+        "price_unit": 599.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 599.0,
+        "price_total": 724.7899780273438,
+        "write_date": "2021-12-14 08:15:53.789037"
+    },
+    {
+        "id": 54,
+        "product_id": 27,
+        "name": "Amazfit Bip 3 Pro",
+        "price_unit": 69.98999786376953,
+        "qty_invoiced": 0,
+        "price_subtotal": 69.98999786376953,
+        "price_total": 84.69000244140625,
+        "write_date": "2021-08-14 08:16:04.146083"
+    },
+    {
+        "id": 65,
+        "product_id": 16,
+        "name": "Cargador para Coche",
+        "price_unit": 15.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 15.0,
+        "price_total": 18.149999618530273,
+        "write_date": "2020-12-14 08:23:04.705742"
+    },
+    {
+        "id": 66,
+        "product_id": 34,
+        "name": "Xiaomi 11T",
+        "price_unit": 599.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 599.0,
+        "price_total": 724.7899780273438,
+        "write_date": "2020-12-14 08:23:14.08542"
+    },
+    {
+        "id": 49,
+        "product_id": 34,
+        "name": "Xiaomi 11T",
+        "price_unit": 599.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 1797.0,
+        "price_total": 2174.3701171875,
+        "write_date": "2020-01-14 08:15:37.175345"
+    },
+    {
+        "id": 51,
+        "product_id": 28,
+        "name": "Amazfit GTS 2 mini",
+        "price_unit": 79.98999786376953,
+        "qty_invoiced": 0,
+        "price_subtotal": 319.9599914550781,
+        "price_total": 387.1499938964844,
+        "write_date": "2020-11-14 08:15:37.175345"
+    },
+    {
+        "id": 56,
+        "product_id": 25,
+        "name": "Apple Watch Series 3",
+        "price_unit": 235.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 470.0,
+        "price_total": 568.7000122070312,
+        "write_date": "2020-08-14 08:16:33.068399"
+    },
+    {
+        "id": 58,
+        "product_id": 6,
+        "name": "AirPods Pro (2.ª generación)",
+        "price_unit": 299.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 598.0,
+        "price_total": 723.5800170898438,
+        "write_date": "2020-06-14 08:16:57.456021"
+    },
+    {
+        "id": 59,
+        "product_id": 34,
+        "name": "Xiaomi 11T",
+        "price_unit": 599.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 1797.0,
+        "price_total": 2174.3701171875,
+        "write_date": "2020-05-14 08:17:27.707336"
+    },
+    {
+        "id": 60,
+        "product_id": 20,
+        "name": "Xiaomi Mi Watch",
+        "price_unit": 103.68000030517578,
+        "qty_invoiced": 0,
+        "price_subtotal": 103.68000030517578,
+        "price_total": 125.44999694824219,
+        "write_date": "2020-04-14 08:17:27.707336"
+    },
+    {
+        "id": 67,
+        "product_id": 19,
+        "name": "Xiaomi Mi Band 3",
+        "price_unit": 27.18000030517578,
+        "qty_invoiced": 0,
+        "price_subtotal": 27.18000030517578,
+        "price_total": 32.88999938964844,
+        "write_date": "2020-01-14 08:23:27.336431"
+    },
+    {
+        "id": 68,
+        "product_id": 29,
+        "name": "ZTE Blade A52 Lite",
+        "price_unit": 99.0,
+        "qty_invoiced": 0,
+        "price_subtotal": 99.0,
+        "price_total": 119.79000091552734,
+        "write_date": "2020-02-14 08:23:41.706445"
+    },
+    {
+        "id": 69,
+        "product_id": 10,
+        "name": "ZTE LiveBuds",
+        "price_unit": 12.0,
+        "qty_invoiced": 3,
+        "price_subtotal": 36.0,
+        "price_total": 43.560001373291016,
+        "write_date": "2022-11-14 13:13:34.498"
+    }
+]
