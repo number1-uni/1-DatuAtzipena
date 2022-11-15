@@ -10,12 +10,14 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "Salmenta")
 public class Salmenta {
 
+  
   private int id;
   private int product_id;
   private String name;
   private float price_unit;
   private int qty_invoiced;
   private float price_subtotal;
+  @XmlElement(name = "price_total") //kendu ezkero ez du gordetzen fitxategia XML-an
   private float price_total;
   private String write_date;
 

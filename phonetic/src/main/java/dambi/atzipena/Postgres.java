@@ -22,8 +22,9 @@ public class Postgres {
     public static Produktuak produktuak = new Produktuak();
 
     /**
-     * Zerbitzariarekin konektatuko da, 
+     * Zerbitzariarekin konektatuko da,
      * IP/DB/USER/PASS erabiliz.
+     * 
      * @return Connection
      */
     public static Connection connect() {
@@ -51,6 +52,7 @@ public class Postgres {
             while (rs.next()) {
                 produktuak.add(new Produktua(rs.getInt("id"), rs.getString("name"), rs.getDouble("list_price")));
             }
+            conn.close();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
@@ -76,6 +78,7 @@ public class Postgres {
                         rs.getFloat("price_unit"), rs.getInt("qty_invoiced"),
                         rs.getFloat("price_subtotal"), rs.getFloat("price_total"), rs.getString("write_date")));
             }
+            conn.close();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
@@ -84,6 +87,7 @@ public class Postgres {
 
     /**
      * Datu basean produktu bat sartuko da.
+     * 
      * @param id
      * @param izena
      * @param deskripzioa
@@ -109,6 +113,7 @@ public class Postgres {
             stmt.setTimestamp(6, timestamp);
             stmt.executeUpdate();
             stmt.close();
+            conn.close();
         } catch (Exception ex) {
             System.out.println("Exception : " + ex);
         }
@@ -116,6 +121,7 @@ public class Postgres {
 
     /**
      * Azkenengo produktuaren id-a itzultzen du.
+     * 
      * @return id
      */
     public static int findIdProduct() {
@@ -128,6 +134,7 @@ public class Postgres {
             while (rs.next()) {
                 id = rs.getInt(1);
             }
+            conn.close();
         } catch (Exception ex) {
             System.out.println("Exception : " + ex);
         }
@@ -136,6 +143,7 @@ public class Postgres {
 
     /**
      * Datu basean salmenta bat sartuko da.
+     * 
      * @param id
      * @param order_id
      * @param izena
@@ -150,9 +158,9 @@ public class Postgres {
         float price_total = quantity * prezioa + bez;
         float priceTaxUnit = 0.21f * prezioa;
 
-        String sql = "INSERT INTO public.sale_order_line VALUES (?, ?, ?, 10,'invoiced', ?, ?, ?, ?, ?, ?, ?, 0.00, 10, ?, ?,"
-                +"'stock_move', 0.00, 0.00, 0.00, ?, null, null, 2, 1, 1, 25, null, null, 'sale', 0, null, null, 0, 2, ?,"
-                +" 2, ?, null);";
+        String sql = "INSERT INTO public.sale_order_line VALUES (?, ?, ?, 10,'invoiced', ?, ?, ?, ?, ?, ?, ?, 0.00, 10, ?, 1,"
+                + "'stock_move', 0.00, 0.00, 0.00, ?, null, null, 2, 1, 1, 25, null, null, 'sale', 0, null, null, 0, 2, ?,"
+                + " 2, ?, null);";
 
         try {
             Connection conn = connect();
@@ -168,11 +176,12 @@ public class Postgres {
             stmt.setFloat(9, priceTaxUnit);
             stmt.setFloat(10, prezioa);
             stmt.setFloat(11, quantity);
-            stmt.setInt(12, kantitatea);
-            stmt.setFloat(13, quantity);
+            //stmt.setInt(12, kantitatea);
+            stmt.setFloat(12, quantity);
+            stmt.setTimestamp(13, timestamp);
             stmt.setTimestamp(14, timestamp);
-            stmt.setTimestamp(15, timestamp);
             stmt.executeUpdate();
+            conn.close();
         } catch (Exception ex) {
             System.out.println("Exception : " + ex);
         }
@@ -180,6 +189,7 @@ public class Postgres {
 
     /**
      * Azkenengo salmentaren id-a itzultzen du.
+     * 
      * @return
      */
     public static int findIdSale() {
@@ -192,6 +202,7 @@ public class Postgres {
             while (rs.next()) {
                 id = rs.getInt(1);
             }
+            conn.close();
         } catch (Exception ex) {
             System.out.println("Exception : " + ex);
         }
@@ -200,6 +211,7 @@ public class Postgres {
 
     /**
      * Azkenengo salmentaren order_id-a itzultzen du.
+     * 
      * @return
      */
     public static int findOrderId() {
@@ -212,19 +224,20 @@ public class Postgres {
             while (rs.next()) {
                 id = rs.getInt(1);
             }
+            conn.close();
         } catch (Exception ex) {
             System.out.println("Exception : " + ex);
         }
         return id;
     }
 
-    public static void createSaleOrderId(){
-        int order_id = findOrderId() +1;
-        String name = "S00" + order_id; 
+    public static void createSaleOrderId() {
+        int order_id = findOrderId() + 1;
+        String name = "S00" + order_id;
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         String sql = "INSERT INTO public.sale_order VALUES (?, null, null, null, null, null, ?, null, null, null, 'sale', ?, null, true, false, ?,"
-        + "2, 24, 24, 24, 1, 1, null, 'to invoice', '<p><br></p>', 0.00, 0.00, 0.00, 1.000000, null, 2, 1, 1, null, null, null,"
-        + " true, 2, 1, ?,null, null, 'direct', 1, null, null, null);";
+                + "2, 24, 24, 24, 1, 1, null, 'to invoice', '<p><br></p>', 0.00, 0.00, 0.00, 1.000000, null, 2, 1, 1, null, null, null,"
+                + " true, 2, 1, ?,null, null, 'direct', 1, null, null, null);";
 
         try {
             Connection conn = connect();
@@ -234,8 +247,8 @@ public class Postgres {
             stmt.setTimestamp(3, timestamp);
             stmt.setTimestamp(4, timestamp);
             stmt.setTimestamp(5, timestamp);
-
             stmt.executeUpdate();
+            conn.close();
         } catch (Exception ex) {
             System.out.println("Exception : " + ex);
         }
@@ -243,22 +256,29 @@ public class Postgres {
 
     /**
      * Salmentako produktua aukeratzeko metodoa.
+     * 
      * @return izena
      */
     public static String selectProductName() {
         int produktuaIndex;
         produktuakGorde();
-        for (int i = 0; i < produktuak.getProduktuak().size(); i++) {
-            System.out.println((i + 1) + ". " + produktuak.getProduktuak().get(i).getName());
+        String izena = null;
+        try {
+            for (int i = 0; i < produktuak.getProduktuak().size(); i++) {
+                System.out.println((i + 1) + ". " + produktuak.getProduktuak().get(i).getName());
+            }
+            System.out.println("------------------------------------");
+            System.out.print("Sartu produktuaren zenbakia:");
+            produktuaIndex = in.nextInt();
+            izena = produktuak.getProduktuak().get(produktuaIndex - 1).getName();
+        } catch (Exception e) {
+
         }
-        System.out.println("------------------------------------");
-        System.out.print("Sartu produktuaren zenbakia:");
-        produktuaIndex = in.nextInt();
-        String izena = produktuak.getProduktuak().get(produktuaIndex - 1).getName();
         return izena;
     }
 
-    public static void importSalmenta(Salmentak salmentak){
+    public static void importSalmenta(Salmentak salmentak) {
+        System.out.println("KARGATZEN...");
         createSaleOrderId();
         for (int i = 0; i < salmentak.getSalmentak().size(); i++) {
             int id = findIdSale() + 1;
@@ -268,6 +288,7 @@ public class Postgres {
             int kantitatea = salmentak.getSalmentak().get(i).getQty_invoiced();
             insertSaleOrder(id, order_id, izena, prezioa, kantitatea);
         }
+        System.out.println("KARGATU DIRA SALMENTAK!");
 
     }
 }

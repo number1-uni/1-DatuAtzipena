@@ -146,26 +146,21 @@ public class Main {
                         break;
                     case 4:
                         csvaSales.irakurriSales(salmentak);
-                        System.out.println(salmentak);
                         Postgres.importSalmenta(salmentak);
                         break;
                     case 5:
                         xmlaSales.irakurriSales(salmentak);
-                        System.out.println(salmentak);
                         Postgres.importSalmenta(salmentak);
                         break;
                     case 6:
                         jsonaSales.irakurriSales(salmentak);
-                        System.out.println(salmentak);
                         Postgres.importSalmenta(salmentak);
                         break;
                     case 10:
                         salir = true;
-                        System.out.println("Eskerrik asko programa hau erabiltzeagatik.");
                         break;
                     default:
                         System.out.println("Aukera okerra. Saiatu berriz.");
-
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Zenbaki bat aukeratu behar duzu");

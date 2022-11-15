@@ -33,7 +33,7 @@ public class Jsona {
   public void irakurriSales(Salmentak salmentak) {
     /* READ JSON FILE */
     try {
-      JsonReader reader = Json.createReader(new FileReader("src\\data\\" + strFileIn));
+      JsonReader reader = Json.createReader(new FileReader("src//data//" + strFileIn));
       JsonStructure jsonst = reader.read(); // json structure estruktura sortzen da
 
       JsonArray jsonstArray = jsonst.asJsonArray(); // json structure arrayra bihurtzen da
@@ -75,7 +75,7 @@ public class Jsona {
       mendiKopurua++;
     }
     model = jab.build();
-    try (JsonWriter jsonWriter = Json.createWriter(new FileOutputStream("src\\data\\" + strFileOut))) {
+    try (JsonWriter jsonWriter = Json.createWriter(new FileOutputStream("src//data//" + strFileOut))) {
       jsonWriter.writeArray(model);
     } catch (Exception e) {
       e.printStackTrace();
@@ -107,7 +107,7 @@ public class Jsona {
       mendiKopurua++;
     }
     model = jab.build();
-    try (JsonWriter jsonWriter = Json.createWriter(new FileOutputStream("src\\data\\" + strFileOut))) {
+    try (JsonWriter jsonWriter = Json.createWriter(new FileOutputStream("src//data//" + strFileOut))) {
       jsonWriter.writeArray(model);
     } catch (Exception e) {
       e.printStackTrace();
