@@ -17,11 +17,6 @@ public class XMLa {
     this.strFileOut = strFileOut;
   }
 
-  public XMLa(String strFileIn) {
-    this.strFileIn = strFileIn;
-    this.strFileOut = strFileIn + ".csv";
-  }
-
   /**
    * XML fitxategia irakurtzen du eta salmentak ArrayList-ean gordeko da. 
    * @param salmentak

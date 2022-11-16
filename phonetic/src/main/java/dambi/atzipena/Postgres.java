@@ -98,8 +98,7 @@ public class Postgres {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
         String sql = "INSERT INTO public.product_template VALUES( ?, NULL, ?,1, ?,NULL,NULL,'product','product',1, ?," +
-                "10,10,true,true,1,1,NULL,true,NULL,NULL,false,false,0,2, ?,2, ?,0,'none',NULL,NULL,NULL,'receive','no-message',"
-                +
+                "10,10,true,true,1,1,NULL,true,NULL,NULL,false,false,0,2, ?,2, ?,0,'none',NULL,NULL,NULL,'receive','no-message'," + 
                 "NULL,'false',0,'none','no','order',false);";
 
         try {

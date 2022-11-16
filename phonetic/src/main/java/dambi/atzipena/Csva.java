@@ -18,11 +18,6 @@ public class Csva {
     this.strFileOut = strFileOut;
   }
 
-  public Csva(String strFileIn) {
-    this.strFileIn = strFileIn;
-    this.strFileOut = strFileIn + "out.csv";
-  }
-
   /**
    * Csv fitxategia irakurtzen du eta salmentak ArrayList-ean gordeko da. 
    * @param salmentak

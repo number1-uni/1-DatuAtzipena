@@ -21,10 +21,6 @@ public class Jsona {
     this.strFileOut = strFileOut;
   }
 
-  public Jsona(String strFileIn) {
-    this.strFileIn = strFileIn;
-    this.strFileOut = strFileIn + ".csv";
-  }
 
   /**
    * Json fitxategia irakurtzen du eta salmentak ArrayList-ean gordeko da. 
