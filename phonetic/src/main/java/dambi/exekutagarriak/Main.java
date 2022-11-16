@@ -176,13 +176,15 @@ public class Main {
     public static void saveProduct() {
         String izena, deskripzioa;
         float prezioa;
-        boolean check = false;
         int id = Postgres.findIdProduct() + 1;
+        boolean check = false;
         while (!check) {
             try {
                 System.out.println("PRODUKTUA SORTZEKO MENUA");
-                System.out.print("Izena: ");
-                izena = in.next();
+                
+                System.out.print("Izena:"); 
+                in.nextLine(); 
+                izena = in.nextLine();
                 System.out.print("Deskripzioa: ");
                 deskripzioa = in.nextLine();
                 System.out.print("Prezioa: ");
