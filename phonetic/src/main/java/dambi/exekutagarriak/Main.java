@@ -10,10 +10,10 @@ import dambi.pojoak.salmenta.*;
 public class Main {
     private static Produktuak produktuak = new Produktuak();
     private static Salmentak salmentak = new Salmentak();
-    private static Csva csvaProduct = new Csva("produktuakout.txt", "produktuakout.txt");
+    private static Csva csvaProduct = new Csva("produktuakout.csv", "produktuakout.csv");
     private static XMLa xmlaProduct = new XMLa("produktuakout.xml", "produktuakout.xml");
     private static Jsona jsonaProduct = new Jsona("produktuakout.json", "produktuakout.json");
-    private static Csva csvaSales = new Csva("salmentakOut.txt", "salmentakOut.txt");
+    private static Csva csvaSales = new Csva("salmentakOut.csv", "salmentakOut.csv");
     private static XMLa xmlaSales = new XMLa("salmentakOut.xml", "salmentakOut.xml");
     private static Jsona jsonaSales = new Jsona("salmentakOut.json", "salmentakOut.json");
     private static Scanner in = new Scanner(System.in);
